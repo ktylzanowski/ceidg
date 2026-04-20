@@ -1,30 +1,16 @@
-"""
-Prosty chatbot PKD — CLI.
-
-Wymagania:
-    - Qdrant uruchomiony (docker compose up -d)
-    - Ollama uruchomiony z modelem: ollama pull llama3.1:8b
-    - Zaindeksowane PKD: python scripts/ingest_pkd.py
-"""
-
 import json
 import ollama
 from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
 
-# --- Konfiguracja ---
 COLLECTION_NAME = "pkd_codes"
 MODEL_EMBED = "BAAI/bge-m3"
 MODEL_LLM = "llama3.1:8b"
 
 QUESTIONS = [
     ("main_description", "Opisz w kilku słowach, czym chcesz się zajmować w firmie?"),
-    ("type",             "Czy sprzedajesz produkty czy świadczysz usługi? (produkty/usługi/oba)"),
-    ("client",           "Kto jest Twoim głównym klientem? (b2b/b2c/oba)"),
-    ("channel",          "Gdzie odbywa się działalność? (online/stacjonarnie/hybryda)"),
 ]
 
-# --- Inicjalizacja ---
 print("Ładuję model embeddingowy...")
 embedder = SentenceTransformer(MODEL_EMBED)
 qdrant = QdrantClient(host="localhost", port=6333)
@@ -32,14 +18,7 @@ print("Gotowy.\n")
 
 
 def build_query(answers: dict) -> str:
-    parts = [f"Działalność: {answers['main_description']}"]
-    if answers.get("type"):
-        parts.append(answers["type"])
-    if answers.get("client"):
-        parts.append(answers["client"])
-    if answers.get("channel"):
-        parts.append(answers["channel"])
-    return " | ".join(parts)
+    return f"Działalność: {answers['main_description']}"
 
 
 def search_pkd(query: str, top_k: int = 20) -> list[dict]:
@@ -65,9 +44,7 @@ def ask_llm(answers: dict, candidates: list[dict]) -> dict:
 
 Działalność użytkownika:
 - Opis: {answers['main_description']}
-- Typ: {answers.get('type', 'nie podano')}
-- Klient: {answers.get('client', 'nie podano')}
-- Kanał: {answers.get('channel', 'nie podano')}
+Uwaga: jeśli działalność to wyłącznie sprzedaż detaliczna przez internet, rozważ kod 47.91.Z.
 
 Kandydaci z bazy PKD:
 {candidates_text}
