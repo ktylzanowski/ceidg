@@ -1,0 +1,2914 @@
+[
+  {
+    "code": "01.11.Z",
+    "description": "Uprawa zbóż innych niż ryż, roślin strączkowych i roślin oleistych na nasiona"
+  },
+  {
+    "code": "01.12.Z",
+    "description": "Uprawa ryżu"
+  },
+  {
+    "code": "01.13.Z",
+    "description": "Uprawa warzyw, włączając melony oraz uprawa roślin korzeniowych i roślin bulwiastych"
+  },
+  {
+    "code": "01.14.Z",
+    "description": "Uprawa trzciny cukrowej"
+  },
+  {
+    "code": "01.15.Z",
+    "description": "Uprawa tytoniu"
+  },
+  {
+    "code": "01.16.Z",
+    "description": "Uprawa roślin włóknistych"
+  },
+  {
+    "code": "01.19.Z",
+    "description": "Pozostałe uprawy rolne inne niż wieloletnie"
+  },
+  {
+    "code": "01.21.Z",
+    "description": "Uprawa winogron"
+  },
+  {
+    "code": "01.22.Z",
+    "description": "Uprawa drzew i krzewów owocowych tropikalnych i podzwrotnikowych"
+  },
+  {
+    "code": "01.23.Z",
+    "description": "Uprawa drzew i krzewów owocowych cytrusowych"
+  },
+  {
+    "code": "01.24.Z",
+    "description": "Uprawa drzew i krzewów owocowych ziarnkowych i pestkowych"
+  },
+  {
+    "code": "01.25.Z",
+    "description": "Uprawa pozostałych drzew i krzewów owocowych oraz orzechowych"
+  },
+  {
+    "code": "01.26.Z",
+    "description": "Uprawa drzew oleistych"
+  },
+  {
+    "code": "01.27.Z",
+    "description": "Uprawa roślin wykorzystywanych do produkcji napojów"
+  },
+  {
+    "code": "01.28.Z",
+    "description": "Uprawa roślin przyprawowych i aromatycznych oraz roślin wykorzystywanych do produkcji leków i wyrobów farmaceutycznych"
+  },
+  {
+    "code": "01.29.Z",
+    "description": "Uprawa pozostałych roślin wieloletnich"
+  },
+  {
+    "code": "01.30.Z",
+    "description": "Rozmnażanie roślin"
+  },
+  {
+    "code": "01.41.Z",
+    "description": "Chów i hodowla bydła mlecznego"
+  },
+  {
+    "code": "01.42.Z",
+    "description": "Chów i hodowla pozostałego bydła i bawołów"
+  },
+  {
+    "code": "01.43.Z",
+    "description": "Chów i hodowla koni i pozostałych zwierząt koniowatych"
+  },
+  {
+    "code": "01.44.Z",
+    "description": "Chów i hodowla wielbłądów i zwierząt wielbłądowatych"
+  },
+  {
+    "code": "01.45.Z",
+    "description": "Chów i hodowla owiec i kóz"
+  },
+  {
+    "code": "01.46.Z",
+    "description": "Chów i hodowla świń"
+  },
+  {
+    "code": "01.47.Z",
+    "description": "Chów i hodowla drobiu"
+  },
+  {
+    "code": "01.48.Z",
+    "description": "Chów i hodowla pozostałych zwierząt"
+  },
+  {
+    "code": "01.50.Z",
+    "description": "Uprawy rolne połączone z chowem i hodowlą zwierząt (działalność mieszana)"
+  },
+  {
+    "code": "01.61.Z",
+    "description": "Działalność usługowa wspomagająca produkcję roślinną"
+  },
+  {
+    "code": "01.62.Z",
+    "description": "Działalność usługowa wspomagająca chów i hodowlę zwierząt gospodarskich"
+  },
+  {
+    "code": "01.63.Z",
+    "description": "Działalność usługowa następująca po zbiorach oraz obróbka nasion dla celów rozmnażania roślin"
+  },
+  {
+    "code": "01.70.Z",
+    "description": "Łowiectwo i pozyskiwanie zwierząt łownych, włączając działalność usługową"
+  },
+  {
+    "code": "02.10.Z",
+    "description": "Gospodarka leśna i pozostała działalność leśna, z wyłączeniem pozyskiwania produktów leśnych"
+  },
+  {
+    "code": "02.20.Z",
+    "description": "Pozyskiwanie drewna"
+  },
+  {
+    "code": "02.30.Z",
+    "description": "Pozyskiwanie dziko rosnących produktów leśnych, z wyłączeniem drewna"
+  },
+  {
+    "code": "02.40.Z",
+    "description": "Działalność usługowa związana z leśnictwem"
+  },
+  {
+    "code": "03.11.Z",
+    "description": "Rybołówstwo w wodach morskich"
+  },
+  {
+    "code": "03.12.Z",
+    "description": "Rybołówstwo w wodach śródlądowych"
+  },
+  {
+    "code": "03.21.Z",
+    "description": "Akwakultura w wodach morskich"
+  },
+  {
+    "code": "03.22.Z",
+    "description": "Akwakultura w wodach śródlądowych"
+  },
+  {
+    "code": "03.30.Z",
+    "description": "Działalność usługowa wspomagająca rybołówstwo i akwakulturę"
+  },
+  {
+    "code": "05.10.Z",
+    "description": "Wydobywanie węgla kamiennego"
+  },
+  {
+    "code": "05.20.Z",
+    "description": "Wydobywanie węgla brunatnego (lignitu)"
+  },
+  {
+    "code": "06.10.Z",
+    "description": "Górnictwo ropy naftowej"
+  },
+  {
+    "code": "06.20.Z",
+    "description": "Górnictwo gazu ziemnego"
+  },
+  {
+    "code": "07.10.Z",
+    "description": "Górnictwo rud żelaza"
+  },
+  {
+    "code": "07.21.Z",
+    "description": "Górnictwo rud uranu i toru"
+  },
+  {
+    "code": "07.29.Z",
+    "description": "Górnictwo pozostałych rud metali nieżelaznych"
+  },
+  {
+    "code": "08.11.Z",
+    "description": "Wydobywanie kamieni ozdobnych, wapienia, gipsu, łupków oraz pozostałych kamieni i skał"
+  },
+  {
+    "code": "08.12.Z",
+    "description": "Wydobywanie żwiru, piasku, gliny i kaolinu"
+  },
+  {
+    "code": "08.91.Z",
+    "description": "Wydobywanie minerałów dla przemysłu chemicznego oraz do produkcji nawozów"
+  },
+  {
+    "code": "08.92.Z",
+    "description": "Wydobywanie torfu"
+  },
+  {
+    "code": "08.93.Z",
+    "description": "Wydobywanie soli"
+  },
+  {
+    "code": "08.99.Z",
+    "description": "Pozostałe górnictwo i wydobywanie, gdzie indziej niesklasyfikowane"
+  },
+  {
+    "code": "09.10.Z",
+    "description": "Działalność usługowa wspomagająca eksploatację złóż ropy naftowej i gazu ziemnego"
+  },
+  {
+    "code": "09.90.Z",
+    "description": "Działalność usługowa wspomagająca pozostałe górnictwo i wydobywanie"
+  },
+  {
+    "code": "10.11.Z",
+    "description": "Przetwarzanie i konserwowanie mięsa, z wyłączeniem mięsa z drobiu"
+  },
+  {
+    "code": "10.12.Z",
+    "description": "Przetwarzanie i konserwowanie mięsa z drobiu"
+  },
+  {
+    "code": "10.13.Z",
+    "description": "Produkcja wyrobów z mięsa, włączając wyroby z mięsa drobiowego"
+  },
+  {
+    "code": "10.20.Z",
+    "description": "Przetwarzanie i konserwowanie ryb, skorupiaków i mięczaków"
+  },
+  {
+    "code": "10.31.Z",
+    "description": "Przetwarzanie i konserwowanie ziemniaków"
+  },
+  {
+    "code": "10.32.Z",
+    "description": "Produkcja soków z owoców i warzyw"
+  },
+  {
+    "code": "10.39.Z",
+    "description": "Pozostałe przetwarzanie i konserwowanie owoców i warzyw"
+  },
+  {
+    "code": "10.41.Z",
+    "description": "Produkcja olejów i pozostałych tłuszczów płynnych"
+  },
+  {
+    "code": "10.42.Z",
+    "description": "Produkcja margaryny i podobnych tłuszczów jadalnych"
+  },
+  {
+    "code": "10.51.Z",
+    "description": "Wytwarzanie wyrobów mleczarskich"
+  },
+  {
+    "code": "10.52.Z",
+    "description": "Produkcja lodów śmietankowych i pozostałych lodów jadalnych"
+  },
+  {
+    "code": "10.61.Z",
+    "description": "Wytwarzanie produktów przemiału zbóż"
+  },
+  {
+    "code": "10.62.Z",
+    "description": "Wytwarzanie skrobi i wyrobów skrobiowych"
+  },
+  {
+    "code": "10.71.Z",
+    "description": "Produkcja pieczywa; produkcja świeżych wyrobów ciastkarskich i ciastek"
+  },
+  {
+    "code": "10.72.Z",
+    "description": "Produkcja sucharów, herbatników, konserwowanych wyrobów ciastkarskich i ciastek"
+  },
+  {
+    "code": "10.73.Z",
+    "description": "Produkcja wyrobów mącznych"
+  },
+  {
+    "code": "10.81.Z",
+    "description": "Produkcja cukru"
+  },
+  {
+    "code": "10.82.Z",
+    "description": "Produkcja kakao, czekolady i wyrobów cukierniczych"
+  },
+  {
+    "code": "10.83.Z",
+    "description": "Przetwórstwo herbaty i kawy"
+  },
+  {
+    "code": "10.84.Z",
+    "description": "Produkcja przypraw"
+  },
+  {
+    "code": "10.85.Z",
+    "description": "Wytwarzanie gotowych posiłków i dań"
+  },
+  {
+    "code": "10.86.Z",
+    "description": "Produkcja artykułów spożywczych homogenizowanych i żywności dietetycznej"
+  },
+  {
+    "code": "10.89.A",
+    "description": "Produkcja suplementów diety"
+  },
+  {
+    "code": "10.89.B",
+    "description": "Produkcja substytutów mięsa"
+  },
+  {
+    "code": "10.89.C",
+    "description": "Produkcja roślinnych substytutów dla jaj, nabiału i innych produktów mlecznych, z wyłączeniem napojów"
+  },
+  {
+    "code": "10.89.D",
+    "description": "Produkcja pozostałych artykułów spożywczych, z wyłączeniem suplementów diety, substytutów mięsa, roślinnych substytutów dla jaj, nabiału i innych produktów mlecznych, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "10.91.Z",
+    "description": "Produkcja gotowej paszy dla zwierząt gospodarskich"
+  },
+  {
+    "code": "10.92.Z",
+    "description": "Produkcja gotowej karmy dla zwierząt domowych"
+  },
+  {
+    "code": "11.01.Z",
+    "description": "Destylowanie, rektyfikowanie i mieszanie alkoholi"
+  },
+  {
+    "code": "11.02.Z",
+    "description": "Produkcja win gronowych"
+  },
+  {
+    "code": "11.03.Z",
+    "description": "Produkcja cydru i pozostałych owocowych napojów fermentowanych"
+  },
+  {
+    "code": "11.04.Z",
+    "description": "Produkcja pozostałych niedestylowanych napojów fermentowanych"
+  },
+  {
+    "code": "11.05.Z",
+    "description": "Produkcja piwa"
+  },
+  {
+    "code": "11.06.Z",
+    "description": "Produkcja słodu"
+  },
+  {
+    "code": "11.07.Z",
+    "description": "Produkcja napojów bezalkoholowych i wód butelkowanych"
+  },
+  {
+    "code": "12.00.Z",
+    "description": "Produkcja wyrobów tytoniowych"
+  },
+  {
+    "code": "13.10.Z",
+    "description": "Przygotowanie i przędzenie włókien tekstylnych"
+  },
+  {
+    "code": "13.20.Z",
+    "description": "Produkcja tkanin"
+  },
+  {
+    "code": "13.30.Z",
+    "description": "Wykończanie wyrobów tekstylnych"
+  },
+  {
+    "code": "13.91.Z",
+    "description": "Produkcja dzianin metrażowych"
+  },
+  {
+    "code": "13.92.Z",
+    "description": "Produkcja wyrobów tekstylnych dla gospodarstw domowych i gotowych artykułów wyposażenia wnętrz"
+  },
+  {
+    "code": "13.93.Z",
+    "description": "Produkcja dywanów i chodników"
+  },
+  {
+    "code": "13.94.Z",
+    "description": "Produkcja wyrobów powroźniczych, lin, szpagatów i wyrobów sieciowych"
+  },
+  {
+    "code": "13.95.Z",
+    "description": "Produkcja włóknin i wyrobów wykonanych z włókniny"
+  },
+  {
+    "code": "13.96.Z",
+    "description": "Produkcja pozostałych technicznych i przemysłowych wyrobów tekstylnych"
+  },
+  {
+    "code": "13.99.Z",
+    "description": "Produkcja pozostałych wyrobów tekstylnych, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "14.10.Z",
+    "description": "Produkcja odzieży dzianej"
+  },
+  {
+    "code": "14.21.Z",
+    "description": "Produkcja odzieży wierzchniej"
+  },
+  {
+    "code": "14.22.Z",
+    "description": "Produkcja bielizny"
+  },
+  {
+    "code": "14.23.Z",
+    "description": "Produkcja odzieży roboczej"
+  },
+  {
+    "code": "14.24.Z",
+    "description": "Produkcja odzieży skórzanej i wyrobów futrzarskich"
+  },
+  {
+    "code": "14.29.Z",
+    "description": "Produkcja pozostałej odzieży i dodatków do odzieży, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "15.11.Z",
+    "description": "Garbowanie, barwienie, wyprawa skór, w tym futerkowych"
+  },
+  {
+    "code": "15.12.Z",
+    "description": "Produkcja toreb bagażowych, toreb ręcznych i podobnych wyrobów kaletniczych; produkcja wyrobów rymarskich z dowolnego materiału"
+  },
+  {
+    "code": "15.20.Z",
+    "description": "Produkcja obuwia"
+  },
+  {
+    "code": "16.11.Z",
+    "description": "Produkcja wyrobów tartacznych"
+  },
+  {
+    "code": "16.12.Z",
+    "description": "Obróbka i wykończanie wyrobów tartacznych"
+  },
+  {
+    "code": "16.21.Z",
+    "description": "Produkcja arkuszy fornirowych i płyt wykonanych na bazie drewna"
+  },
+  {
+    "code": "16.22.Z",
+    "description": "Produkcja gotowych parkietów podłogowych"
+  },
+  {
+    "code": "16.23.Z",
+    "description": "Produkcja pozostałych wyrobów stolarskich i ciesielskich dla budownictwa"
+  },
+  {
+    "code": "16.24.Z",
+    "description": "Produkcja opakowań drewnianych"
+  },
+  {
+    "code": "16.25.Z",
+    "description": "Produkcja drzwi i okien z drewna"
+  },
+  {
+    "code": "16.26.Z",
+    "description": "Produkcja paliw stałych z biomasy roślinnej"
+  },
+  {
+    "code": "16.27.Z",
+    "description": "Wykończanie wyrobów drewnianych"
+  },
+  {
+    "code": "16.28.Z",
+    "description": "Produkcja pozostałych wyrobów z drewna oraz wyrobów z korka, słomy i materiałów używanych do wyplatania"
+  },
+  {
+    "code": "17.11.Z",
+    "description": "Produkcja masy włóknistej"
+  },
+  {
+    "code": "17.12.Z",
+    "description": "Produkcja papieru i tektury"
+  },
+  {
+    "code": "17.21.Z",
+    "description": "Produkcja papieru falistego, tektury falistej oraz opakowań z papieru i tektury"
+  },
+  {
+    "code": "17.22.Z",
+    "description": "Produkcja artykułów gospodarstwa domowego, toaletowych i sanitarnych"
+  },
+  {
+    "code": "17.23.Z",
+    "description": "Produkcja artykułów papierniczych"
+  },
+  {
+    "code": "17.24.Z",
+    "description": "Produkcja tapet"
+  },
+  {
+    "code": "17.25.Z",
+    "description": "Produkcja pozostałych wyrobów z papieru i tektury"
+  },
+  {
+    "code": "18.11.Z",
+    "description": "Drukowanie gazet"
+  },
+  {
+    "code": "18.12.Z",
+    "description": "Pozostałe drukowanie"
+  },
+  {
+    "code": "18.13.Z",
+    "description": "Działalność usługowa związana z przygotowywaniem do druku"
+  },
+  {
+    "code": "18.14.Z",
+    "description": "Introligatorstwo i podobne usługi"
+  },
+  {
+    "code": "18.20.Z",
+    "description": "Reprodukcja zapisanych nośników informacji"
+  },
+  {
+    "code": "19.10.Z",
+    "description": "Wytwarzanie i przetwarzanie koksu"
+  },
+  {
+    "code": "19.20.Z",
+    "description": "Wytwarzanie i przetwarzanie produktów rafinacji ropy naftowej oraz produktów z paliw kopalnych"
+  },
+  {
+    "code": "20.11.Z",
+    "description": "Produkcja gazów technicznych"
+  },
+  {
+    "code": "20.12.Z",
+    "description": "Produkcja barwników i pigmentów"
+  },
+  {
+    "code": "20.13.Z",
+    "description": "Produkcja pozostałych podstawowych chemikaliów nieorganicznych"
+  },
+  {
+    "code": "20.14.Z",
+    "description": "Produkcja pozostałych podstawowych chemikaliów organicznych"
+  },
+  {
+    "code": "20.15.Z",
+    "description": "Produkcja nawozów i związków azotowych"
+  },
+  {
+    "code": "20.16.Z",
+    "description": "Produkcja tworzyw sztucznych w formach podstawowych"
+  },
+  {
+    "code": "20.17.Z",
+    "description": "Produkcja kauczuku syntetycznego w formach podstawowych"
+  },
+  {
+    "code": "20.20.A",
+    "description": "Produkcja pestycydów"
+  },
+  {
+    "code": "20.20.B",
+    "description": "Produkcja środków dezynfekujących"
+  },
+  {
+    "code": "20.20.C",
+    "description": "Produkcja pozostałych środków agrochemicznych"
+  },
+  {
+    "code": "20.30.Z",
+    "description": "Produkcja farb, lakierów i podobnych powłok, farb drukarskich i mas uszczelniających"
+  },
+  {
+    "code": "20.41.Z",
+    "description": "Produkcja mydła i detergentów, środków myjących i czyszczących"
+  },
+  {
+    "code": "20.42.Z",
+    "description": "Produkcja wyrobów kosmetycznych i toaletowych"
+  },
+  {
+    "code": "20.51.Z",
+    "description": "Produkcja biopaliw płynnych"
+  },
+  {
+    "code": "20.59.Z",
+    "description": "Produkcja pozostałych wyrobów chemicznych, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "20.60.Z",
+    "description": "Produkcja włókien chemicznych"
+  },
+  {
+    "code": "21.10.Z",
+    "description": "Produkcja podstawowych substancji farmaceutycznych"
+  },
+  {
+    "code": "21.20.Z",
+    "description": "Produkcja leków i pozostałych wyrobów farmaceutycznych"
+  },
+  {
+    "code": "22.11.Z",
+    "description": "Produkcja, bieżnikowanie i regenerowanie opon z gumy oraz produkcja dętek"
+  },
+  {
+    "code": "22.12.Z",
+    "description": "Produkcja pozostałych wyrobów z gumy"
+  },
+  {
+    "code": "22.21.Z",
+    "description": "Produkcja płyt, arkuszy, rur i kształtowników z tworzyw sztucznych"
+  },
+  {
+    "code": "22.22.Z",
+    "description": "Produkcja opakowań z tworzyw sztucznych"
+  },
+  {
+    "code": "22.23.Z",
+    "description": "Produkcja drzwi i okien z tworzyw sztucznych"
+  },
+  {
+    "code": "22.24.Z",
+    "description": "Produkcja wyrobów dla budownictwa z tworzyw sztucznych"
+  },
+  {
+    "code": "22.25.Z",
+    "description": "Obróbka i wykończanie wyrobów z tworzyw sztucznych"
+  },
+  {
+    "code": "22.26.Z",
+    "description": "Produkcja pozostałych wyrobów z tworzyw sztucznych"
+  },
+  {
+    "code": "23.11.Z",
+    "description": "Produkcja szkła płaskiego"
+  },
+  {
+    "code": "23.12.Z",
+    "description": "Kształtowanie i obróbka szkła płaskiego"
+  },
+  {
+    "code": "23.13.Z",
+    "description": "Produkcja szkła gospodarczego"
+  },
+  {
+    "code": "23.14.Z",
+    "description": "Produkcja włókien szklanych"
+  },
+  {
+    "code": "23.15.Z",
+    "description": "Produkcja i obróbka pozostałego szkła, włączając szkło techniczne"
+  },
+  {
+    "code": "23.20.Z",
+    "description": "Produkcja wyrobów ogniotrwałych"
+  },
+  {
+    "code": "23.31.Z",
+    "description": "Produkcja ceramicznych kafli i płytek"
+  },
+  {
+    "code": "23.32.Z",
+    "description": "Produkcja cegieł, dachówek i materiałów budowlanych, z wypalanej gliny"
+  },
+  {
+    "code": "23.41.Z",
+    "description": "Produkcja ceramicznych wyrobów stołowych i ozdobnych"
+  },
+  {
+    "code": "23.42.Z",
+    "description": "Produkcja ceramicznych wyrobów sanitarnych"
+  },
+  {
+    "code": "23.43.Z",
+    "description": "Produkcja ceramicznych izolatorów i osłon izolacyjnych"
+  },
+  {
+    "code": "23.44.Z",
+    "description": "Produkcja pozostałych technicznych wyrobów ceramicznych"
+  },
+  {
+    "code": "23.45.Z",
+    "description": "Produkcja pozostałych wyrobów ceramicznych"
+  },
+  {
+    "code": "23.51.Z",
+    "description": "Produkcja cementu"
+  },
+  {
+    "code": "23.52.Z",
+    "description": "Produkcja wapna i gipsu"
+  },
+  {
+    "code": "23.61.Z",
+    "description": "Produkcja wyrobów budowlanych z betonu"
+  },
+  {
+    "code": "23.62.Z",
+    "description": "Produkcja wyrobów budowlanych z gipsu"
+  },
+  {
+    "code": "23.63.Z",
+    "description": "Produkcja masy betonowej prefabrykowanej"
+  },
+  {
+    "code": "23.64.Z",
+    "description": "Produkcja zaprawy murarskiej"
+  },
+  {
+    "code": "23.65.Z",
+    "description": "Produkcja cementu wzmocnionego włóknem"
+  },
+  {
+    "code": "23.66.Z",
+    "description": "Produkcja pozostałych wyrobów z betonu, cementu i gipsu"
+  },
+  {
+    "code": "23.70.A",
+    "description": "Produkcja nagrobków, grobowców i płyt nagrobnych z kamienia"
+  },
+  {
+    "code": "23.70.B",
+    "description": "Produkcja pozostałych wyrobów z kamienia oraz cięcie, formowanie i wykończanie kamienia"
+  },
+  {
+    "code": "23.91.Z",
+    "description": "Produkcja wyrobów ściernych"
+  },
+  {
+    "code": "23.99.Z",
+    "description": "Produkcja pozostałych wyrobów z mineralnych surowców niemetalicznych, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "24.10.Z",
+    "description": "Produkcja surówki, żelazostopów, żeliwa i stali oraz wyrobów hutniczych"
+  },
+  {
+    "code": "24.20.Z",
+    "description": "Produkcja rur, przewodów, kształtowników zamkniętych i łączników, ze stali"
+  },
+  {
+    "code": "24.31.Z",
+    "description": "Produkcja prętów ciągnionych na zimno"
+  },
+  {
+    "code": "24.32.Z",
+    "description": "Produkcja wyrobów płaskich walcowanych na zimno"
+  },
+  {
+    "code": "24.33.Z",
+    "description": "Produkcja wyrobów formowanych na zimno"
+  },
+  {
+    "code": "24.34.Z",
+    "description": "Produkcja drutu"
+  },
+  {
+    "code": "24.41.Z",
+    "description": "Produkcja metali szlachetnych"
+  },
+  {
+    "code": "24.42.A",
+    "description": "Produkcja aluminium hutniczego"
+  },
+  {
+    "code": "24.42.B",
+    "description": "Produkcja wyrobów z aluminium i stopów aluminium"
+  },
+  {
+    "code": "24.43.Z",
+    "description": "Produkcja ołowiu, cynku i cyny"
+  },
+  {
+    "code": "24.44.Z",
+    "description": "Produkcja miedzi"
+  },
+  {
+    "code": "24.45.Z",
+    "description": "Produkcja pozostałych metali nieżelaznych"
+  },
+  {
+    "code": "24.46.Z",
+    "description": "Wytwarzanie paliw jądrowych"
+  },
+  {
+    "code": "24.51.Z",
+    "description": "Odlewnictwo żeliwa"
+  },
+  {
+    "code": "24.52.Z",
+    "description": "Odlewnictwo staliwa"
+  },
+  {
+    "code": "24.53.Z",
+    "description": "Odlewnictwo metali lekkich"
+  },
+  {
+    "code": "24.54.A",
+    "description": "Odlewnictwo miedzi i stopów miedzi"
+  },
+  {
+    "code": "24.54.B",
+    "description": "Odlewnictwo pozostałych metali nieżelaznych, gdzie indziej niesklasyfikowane"
+  },
+  {
+    "code": "25.11.Z",
+    "description": "Produkcja konstrukcji metalowych i ich części"
+  },
+  {
+    "code": "25.12.Z",
+    "description": "Produkcja drzwi i okien z metalu"
+  },
+  {
+    "code": "25.21.Z",
+    "description": "Produkcja grzejników centralnego ogrzewania, wytwornic pary i kotłów"
+  },
+  {
+    "code": "25.22.Z",
+    "description": "Produkcja pozostałych zbiorników, cystern i pojemników metalowych"
+  },
+  {
+    "code": "25.30.Z",
+    "description": "Produkcja broni i amunicji"
+  },
+  {
+    "code": "25.40.Z",
+    "description": "Kucie i formowanie metali oraz metalurgia proszków"
+  },
+  {
+    "code": "25.51.Z",
+    "description": "Nakładanie powłok na metale"
+  },
+  {
+    "code": "25.52.Z",
+    "description": "Obróbka cieplna metali"
+  },
+  {
+    "code": "25.53.Z",
+    "description": "Obróbka mechaniczna elementów metalowych"
+  },
+  {
+    "code": "25.61.Z",
+    "description": "Produkcja wyrobów nożowniczych i sztućców"
+  },
+  {
+    "code": "25.62.Z",
+    "description": "Produkcja zamków i zawiasów"
+  },
+  {
+    "code": "25.63.Z",
+    "description": "Produkcja narzędzi"
+  },
+  {
+    "code": "25.91.Z",
+    "description": "Produkcja pojemników metalowych"
+  },
+  {
+    "code": "25.92.Z",
+    "description": "Produkcja lekkich opakowań metalowych"
+  },
+  {
+    "code": "25.93.Z",
+    "description": "Produkcja wyrobów z drutu, łańcuchów i sprężyn"
+  },
+  {
+    "code": "25.94.Z",
+    "description": "Produkcja złączy i śrub"
+  },
+  {
+    "code": "25.99.Z",
+    "description": "Produkcja pozostałych gotowych wyrobów metalowych, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "26.11.Z",
+    "description": "Produkcja elementów elektronicznych"
+  },
+  {
+    "code": "26.12.Z",
+    "description": "Produkcja elektronicznych obwodów drukowanych"
+  },
+  {
+    "code": "26.20.Z",
+    "description": "Produkcja komputerów i urządzeń peryferyjnych"
+  },
+  {
+    "code": "26.30.Z",
+    "description": "Produkcja sprzętu (tele)komunikacyjnego"
+  },
+  {
+    "code": "26.40.Z",
+    "description": "Produkcja elektronicznego sprzętu powszechnego użytku"
+  },
+  {
+    "code": "26.51.Z",
+    "description": "Produkcja instrumentów i przyrządów pomiarowych, kontrolnych i nawigacyjnych"
+  },
+  {
+    "code": "26.52.Z",
+    "description": "Produkcja zegarków i zegarów"
+  },
+  {
+    "code": "26.60.Z",
+    "description": "Produkcja urządzeń napromieniowujących, sprzętu elektromedycznego i elektroterapeutycznego"
+  },
+  {
+    "code": "26.70.Z",
+    "description": "Produkcja instrumentów optycznych, niezapisanych magnetycznych i optycznych nośników informacji oraz sprzętu fotograficznego"
+  },
+  {
+    "code": "27.11.Z",
+    "description": "Produkcja elektrycznych silników, prądnic i transformatorów"
+  },
+  {
+    "code": "27.12.Z",
+    "description": "Produkcja aparatury rozdzielczej i sterowniczej energii elektrycznej"
+  },
+  {
+    "code": "27.20.Z",
+    "description": "Produkcja baterii i akumulatorów"
+  },
+  {
+    "code": "27.31.Z",
+    "description": "Produkcja kabli światłowodowych"
+  },
+  {
+    "code": "27.32.Z",
+    "description": "Produkcja pozostałych elektronicznych i elektrycznych przewodów i kabli"
+  },
+  {
+    "code": "27.33.Z",
+    "description": "Produkcja sprzętu instalacyjnego"
+  },
+  {
+    "code": "27.40.Z",
+    "description": "Produkcja sprzętu oświetleniowego"
+  },
+  {
+    "code": "27.51.Z",
+    "description": "Produkcja elektrycznego sprzętu gospodarstwa domowego"
+  },
+  {
+    "code": "27.52.Z",
+    "description": "Produkcja nieelektrycznego sprzętu gospodarstwa domowego"
+  },
+  {
+    "code": "27.90.Z",
+    "description": "Produkcja pozostałego sprzętu elektrycznego"
+  },
+  {
+    "code": "28.11.Z",
+    "description": "Produkcja silników i turbin, z wyłączeniem silników lotniczych, samochodowych i motocyklowych"
+  },
+  {
+    "code": "28.12.Z",
+    "description": "Produkcja sprzętu i wyposażenia do napędu hydraulicznego i pneumatycznego"
+  },
+  {
+    "code": "28.13.Z",
+    "description": "Produkcja pozostałych pomp i sprężarek"
+  },
+  {
+    "code": "28.14.Z",
+    "description": "Produkcja pozostałych kurków i zaworów"
+  },
+  {
+    "code": "28.15.Z",
+    "description": "Produkcja łożysk, kół zębatych, przekładni zębatych i elementów napędowych"
+  },
+  {
+    "code": "28.21.Z",
+    "description": "Produkcja pieców, palenisk i stałych urządzeń grzewczych dla gospodarstw domowych"
+  },
+  {
+    "code": "28.22.Z",
+    "description": "Produkcja urządzeń podnośnikowych i przeładunkowych"
+  },
+  {
+    "code": "28.23.Z",
+    "description": "Produkcja maszyn i sprzętu biurowego, z wyłączeniem komputerów i urządzeń peryferyjnych"
+  },
+  {
+    "code": "28.24.Z",
+    "description": "Produkcja narzędzi ręcznych mechanicznych"
+  },
+  {
+    "code": "28.25.Z",
+    "description": "Produkcja przemysłowych urządzeń chłodniczych, wentylacyjnych i klimatyzacyjnych"
+  },
+  {
+    "code": "28.29.Z",
+    "description": "Produkcja pozostałych maszyn ogólnego przeznaczenia, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "28.30.Z",
+    "description": "Produkcja maszyn dla rolnictwa i leśnictwa"
+  },
+  {
+    "code": "28.41.Z",
+    "description": "Produkcja maszyn do formowania metalu i obrabiarek do metalu"
+  },
+  {
+    "code": "28.42.Z",
+    "description": "Produkcja pozostałych narzędzi mechanicznych"
+  },
+  {
+    "code": "28.91.Z",
+    "description": "Produkcja maszyn dla metalurgii"
+  },
+  {
+    "code": "28.92.Z",
+    "description": "Produkcja maszyn dla górnictwa i do wydobywania oraz budownictwa"
+  },
+  {
+    "code": "28.93.Z",
+    "description": "Produkcja maszyn stosowanych w przetwórstwie żywności, tytoniu i produkcji napojów"
+  },
+  {
+    "code": "28.94.Z",
+    "description": "Produkcja maszyn dla przemysłu tekstylnego, odzieżowego i skórzanego"
+  },
+  {
+    "code": "28.95.Z",
+    "description": "Produkcja maszyn dla przemysłu papierniczego"
+  },
+  {
+    "code": "28.96.Z",
+    "description": "Produkcja maszyn do obróbki gumy lub tworzyw sztucznych"
+  },
+  {
+    "code": "28.97.Z",
+    "description": "Produkcja maszyn do wytwarzania przyrostowego"
+  },
+  {
+    "code": "28.99.Z",
+    "description": "Produkcja pozostałych maszyn specjalnego przeznaczenia, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "29.10.A",
+    "description": "Produkcja silników do pojazdów silnikowych, z wyłączeniem motocykli"
+  },
+  {
+    "code": "29.10.B",
+    "description": "Produkcja samochodów osobowych"
+  },
+  {
+    "code": "29.10.C",
+    "description": "Produkcja autobusów"
+  },
+  {
+    "code": "29.10.D",
+    "description": "Produkcja pojazdów silnikowych przeznaczonych do przewozu towarów"
+  },
+  {
+    "code": "29.10.E",
+    "description": "Produkcja pozostałych pojazdów silnikowych, z wyłączeniem motocykli"
+  },
+  {
+    "code": "29.20.Z",
+    "description": "Produkcja nadwozi do pojazdów silnikowych, z wyłączeniem motocykli; produkcja przyczep i naczep"
+  },
+  {
+    "code": "29.31.Z",
+    "description": "Produkcja wyposażenia elektrycznego i elektronicznego do pojazdów silnikowych"
+  },
+  {
+    "code": "29.32.Z",
+    "description": "Produkcja pozostałych części i akcesoriów do pojazdów silnikowych, z wyłączeniem motocykli"
+  },
+  {
+    "code": "30.11.Z",
+    "description": "Produkcja cywilnych statków i konstrukcji pływających"
+  },
+  {
+    "code": "30.12.Z",
+    "description": "Produkcja łodzi wypoczynkowych i sportowych"
+  },
+  {
+    "code": "30.13.Z",
+    "description": "Produkcja wojskowych okrętów i jednostek pływających"
+  },
+  {
+    "code": "30.20.Z",
+    "description": "Produkcja lokomotyw kolejowych oraz taboru szynowego"
+  },
+  {
+    "code": "30.31.Z",
+    "description": "Produkcja cywilnych statków powietrznych, statków kosmicznych i podobnych maszyn"
+  },
+  {
+    "code": "30.32.Z",
+    "description": "Produkcja wojskowych statków powietrznych, statków kosmicznych i podobnych maszyn"
+  },
+  {
+    "code": "30.40.Z",
+    "description": "Produkcja wojskowych pojazdów bojowych"
+  },
+  {
+    "code": "30.91.Z",
+    "description": "Produkcja motocykli"
+  },
+  {
+    "code": "30.92.Z",
+    "description": "Produkcja rowerów i wózków inwalidzkich"
+  },
+  {
+    "code": "30.99.Z",
+    "description": "Produkcja pozostałego sprzętu transportowego, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "31.00.Z",
+    "description": "Produkcja mebli"
+  },
+  {
+    "code": "32.11.Z",
+    "description": "Produkcja monet"
+  },
+  {
+    "code": "32.12.Z",
+    "description": "Produkcja wyrobów jubilerskich i podobnych"
+  },
+  {
+    "code": "32.13.Z",
+    "description": "Produkcja sztucznej biżuterii i wyrobów podobnych"
+  },
+  {
+    "code": "32.20.Z",
+    "description": "Produkcja instrumentów muzycznych"
+  },
+  {
+    "code": "32.30.Z",
+    "description": "Produkcja sprzętu sportowego"
+  },
+  {
+    "code": "32.40.Z",
+    "description": "Produkcja gier i zabawek"
+  },
+  {
+    "code": "32.50.A",
+    "description": "Produkcja urządzeń, instrumentów oraz wyrobów dentystycznych"
+  },
+  {
+    "code": "32.50.B",
+    "description": "Pozostała produkcja urządzeń, instrumentów oraz wyrobów medycznych"
+  },
+  {
+    "code": "32.91.Z",
+    "description": "Produkcja mioteł, szczotek i pędzli"
+  },
+  {
+    "code": "32.99.Z",
+    "description": "Produkcja pozostałych wyrobów, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "33.11.Z",
+    "description": "Naprawa i konserwacja metalowych wyrobów gotowych"
+  },
+  {
+    "code": "33.12.Z",
+    "description": "Naprawa i konserwacja maszyn"
+  },
+  {
+    "code": "33.13.Z",
+    "description": "Naprawa i konserwacja urządzeń elektronicznych i optycznych"
+  },
+  {
+    "code": "33.14.Z",
+    "description": "Naprawa i konserwacja urządzeń elektrycznych"
+  },
+  {
+    "code": "33.15.Z",
+    "description": "Naprawa i konserwacja cywilnych statków i łodzi"
+  },
+  {
+    "code": "33.16.Z",
+    "description": "Naprawa i konserwacja cywilnych statków powietrznych i statków kosmicznych"
+  },
+  {
+    "code": "33.17.Z",
+    "description": "Naprawa i konserwacja pozostałego cywilnego sprzętu transportowego"
+  },
+  {
+    "code": "33.18.Z",
+    "description": "Naprawa i konserwacja wojskowych pojazdów bojowych, okrętów, łodzi, statków powietrznych i statków kosmicznych"
+  },
+  {
+    "code": "33.19.Z",
+    "description": "Naprawa i konserwacja pozostałego sprzętu i wyposażenia"
+  },
+  {
+    "code": "33.20.Z",
+    "description": "Instalowanie maszyn przemysłowych, sprzętu i wyposażenia"
+  },
+  {
+    "code": "35.11.Z",
+    "description": "Wytwarzanie energii elektrycznej ze źródeł nieodnawialnych"
+  },
+  {
+    "code": "35.12.A",
+    "description": "Energetyka wiatrowa"
+  },
+  {
+    "code": "35.12.B",
+    "description": "Energetyka słoneczna"
+  },
+  {
+    "code": "35.12.C",
+    "description": "Energetyka geotermalna"
+  },
+  {
+    "code": "35.12.D",
+    "description": "Energetyka biogazowa"
+  },
+  {
+    "code": "35.12.E",
+    "description": "Energetyka wodna"
+  },
+  {
+    "code": "35.12.F",
+    "description": "Wytwarzanie energii elektrycznej z pozostałych źródeł odnawialnych"
+  },
+  {
+    "code": "35.13.Z",
+    "description": "Przesyłanie energii elektrycznej"
+  },
+  {
+    "code": "35.14.Z",
+    "description": "Dystrybucja energii elektrycznej"
+  },
+  {
+    "code": "35.15.Z",
+    "description": "Handel energią elektryczną"
+  },
+  {
+    "code": "35.16.Z",
+    "description": "Magazynowanie energii elektrycznej"
+  },
+  {
+    "code": "35.21.Z",
+    "description": "Wytwarzanie paliw gazowych"
+  },
+  {
+    "code": "35.22.Z",
+    "description": "Dystrybucja paliw gazowych w systemie sieciowym"
+  },
+  {
+    "code": "35.23.Z",
+    "description": "Handel paliwami gazowymi w systemie sieciowym"
+  },
+  {
+    "code": "35.24.Z",
+    "description": "Magazynowanie paliw gazowych w ramach usług zaopatrzenia sieciowego"
+  },
+  {
+    "code": "35.30.Z",
+    "description": "Wytwarzanie i zaopatrywanie w parę wodną i powietrze do układów klimatyzacyjnych"
+  },
+  {
+    "code": "35.40.Z",
+    "description": "Działalność brokerów i agentów w zakresie energii elektrycznej i gazu ziemnego"
+  },
+  {
+    "code": "36.00.Z",
+    "description": "Pobór, uzdatnianie i dostarczanie wody"
+  },
+  {
+    "code": "37.00.Z",
+    "description": "Odprowadzanie i oczyszczanie ścieków"
+  },
+  {
+    "code": "38.11.Z",
+    "description": "Zbieranie odpadów innych niż niebezpieczne"
+  },
+  {
+    "code": "38.12.Z",
+    "description": "Zbieranie odpadów niebezpiecznych"
+  },
+  {
+    "code": "38.21.Z",
+    "description": "Odzysk surowców"
+  },
+  {
+    "code": "38.22.Z",
+    "description": "Odzysk energii"
+  },
+  {
+    "code": "38.23.Z",
+    "description": "Pozostały odzysk związany z odpadami"
+  },
+  {
+    "code": "38.31.Z",
+    "description": "Spalanie odpadów bez odzysku energii"
+  },
+  {
+    "code": "38.32.Z",
+    "description": "Składowanie odpadów"
+  },
+  {
+    "code": "38.33.Z",
+    "description": "Pozostałe unieszkodliwianie odpadów"
+  },
+  {
+    "code": "39.00.Z",
+    "description": "Działalność związana z rekultywacją i pozostała działalność usługowa związana z gospodarką odpadami"
+  },
+  {
+    "code": "41.00.A",
+    "description": "Roboty budowlane związane ze wznoszeniem budynków mieszkalnych"
+  },
+  {
+    "code": "41.00.B",
+    "description": "Roboty budowlane związane ze wznoszeniem budynków niemieszkalnych"
+  },
+  {
+    "code": "42.11.Z",
+    "description": "Roboty związane z budową dróg i autostrad"
+  },
+  {
+    "code": "42.12.Z",
+    "description": "Roboty związane z budową dróg szynowych i kolei podziemnej"
+  },
+  {
+    "code": "42.13.Z",
+    "description": "Roboty związane z budową mostów i tuneli"
+  },
+  {
+    "code": "42.21.Z",
+    "description": "Roboty związane z budową rurociągów przesyłowych i sieci rozdzielczych"
+  },
+  {
+    "code": "42.22.Z",
+    "description": "Roboty związane z budową linii telekomunikacyjnych i elektroenergetycznych"
+  },
+  {
+    "code": "42.91.Z",
+    "description": "Roboty związane z budową obiektów inżynierii wodnej"
+  },
+  {
+    "code": "42.99.Z",
+    "description": "Roboty związane z budową pozostałych obiektów inżynierii lądowej i wodnej, gdzie indziej niesklasyfikowane"
+  },
+  {
+    "code": "43.11.Z",
+    "description": "Rozbiórka i burzenie obiektów budowlanych"
+  },
+  {
+    "code": "43.12.Z",
+    "description": "Przygotowanie terenu pod budowę"
+  },
+  {
+    "code": "43.13.Z",
+    "description": "Wykonywanie wykopów i wierceń geologiczno-inżynierskich"
+  },
+  {
+    "code": "43.21.Z",
+    "description": "Wykonywanie instalacji elektrycznych"
+  },
+  {
+    "code": "43.22.Z",
+    "description": "Wykonywanie instalacji wodno-kanalizacyjnych, cieplnych i klimatyzacyjnych"
+  },
+  {
+    "code": "43.23.Z",
+    "description": "Montaż izolacji"
+  },
+  {
+    "code": "43.24.Z",
+    "description": "Wykonywanie pozostałych instalacji budowlanych"
+  },
+  {
+    "code": "43.31.Z",
+    "description": "Tynkowanie"
+  },
+  {
+    "code": "43.32.Z",
+    "description": "Zakładanie stolarki budowlanej"
+  },
+  {
+    "code": "43.33.Z",
+    "description": "Posadzkarstwo; tapetowanie i oblicowywanie ścian"
+  },
+  {
+    "code": "43.34.Z",
+    "description": "Malowanie i szklenie"
+  },
+  {
+    "code": "43.35.Z",
+    "description": "Wykonywanie pozostałych robót budowlanych wykończeniowych"
+  },
+  {
+    "code": "43.41.Z",
+    "description": "Wykonywanie konstrukcji i pokryć dachowych"
+  },
+  {
+    "code": "43.42.Z",
+    "description": "Wykonywanie pozostałych specjalistycznych robót budowlanych w zakresie budowy budynków"
+  },
+  {
+    "code": "43.50.Z",
+    "description": "Roboty budowlane specjalistyczne w zakresie inżynierii lądowej i wodnej"
+  },
+  {
+    "code": "43.60.Z",
+    "description": "Pośrednictwo w zakresie specjalistycznych usług budowlanych"
+  },
+  {
+    "code": "43.91.Z",
+    "description": "Roboty murarskie"
+  },
+  {
+    "code": "43.99.Z",
+    "description": "Pozostałe specjalistyczne roboty budowlane, gdzie indziej niesklasyfikowane"
+  },
+  {
+    "code": "46.11.A",
+    "description": "Działalność agentów zajmujących się sprzedażą hurtową zbóż i nasion oleistych"
+  },
+  {
+    "code": "46.11.B",
+    "description": "Działalność agentów zajmujących się sprzedażą hurtową pozostałych płodów rolnych, żywych zwierząt, surowców dla przemysłu tekstylnego i półproduktów"
+  },
+  {
+    "code": "46.12.Z",
+    "description": "Działalność agentów zajmujących się sprzedażą hurtową paliw, rud, metali i chemikaliów przemysłowych"
+  },
+  {
+    "code": "46.13.Z",
+    "description": "Działalność agentów zajmujących się sprzedażą hurtową drewna i materiałów budowlanych"
+  },
+  {
+    "code": "46.14.Z",
+    "description": "Działalność agentów zajmujących się sprzedażą hurtową maszyn, urządzeń przemysłowych, statków i samolotów"
+  },
+  {
+    "code": "46.15.Z",
+    "description": "Działalność agentów zajmujących się sprzedażą hurtową mebli, artykułów gospodarstwa domowego i drobnych wyrobów metalowych"
+  },
+  {
+    "code": "46.16.Z",
+    "description": "Działalność agentów zajmujących się sprzedażą hurtową wyrobów tekstylnych, odzieży, wyrobów futrzarskich, obuwia i artykułów skórzanych"
+  },
+  {
+    "code": "46.17.Z",
+    "description": "Działalność agentów zajmujących się sprzedażą hurtową żywności, napojów i wyrobów tytoniowych"
+  },
+  {
+    "code": "46.18.Z",
+    "description": "Działalność agentów zajmujących się sprzedażą hurtową wyspecjalizowaną pozostałych towarów"
+  },
+  {
+    "code": "46.19.Z",
+    "description": "Działalność agentów zajmujących się sprzedażą hurtową niewyspecjalizowaną"
+  },
+  {
+    "code": "46.21.A",
+    "description": "Sprzedaż hurtowa zboża i nasion roślin oleistych"
+  },
+  {
+    "code": "46.21.B",
+    "description": "Sprzedaż hurtowa nieprzetworzonego tytoniu i pasz dla zwierząt"
+  },
+  {
+    "code": "46.22.Z",
+    "description": "Sprzedaż hurtowa kwiatów i roślin"
+  },
+  {
+    "code": "46.23.Z",
+    "description": "Sprzedaż hurtowa żywych zwierząt"
+  },
+  {
+    "code": "46.24.Z",
+    "description": "Sprzedaż hurtowa skór"
+  },
+  {
+    "code": "46.31.Z",
+    "description": "Sprzedaż hurtowa owoców i warzyw"
+  },
+  {
+    "code": "46.32.Z",
+    "description": "Sprzedaż hurtowa mięsa i wyrobów z mięsa oraz ryb i wyrobów z ryb"
+  },
+  {
+    "code": "46.33.Z",
+    "description": "Sprzedaż hurtowa mleka, wyrobów mleczarskich, jaj, olejów i tłuszczów jadalnych"
+  },
+  {
+    "code": "46.34.A",
+    "description": "Sprzedaż hurtowa napojów alkoholowych"
+  },
+  {
+    "code": "46.34.B",
+    "description": "Sprzedaż hurtowa napojów bezalkoholowych"
+  },
+  {
+    "code": "46.35.Z",
+    "description": "Sprzedaż hurtowa wyrobów tytoniowych"
+  },
+  {
+    "code": "46.36.Z",
+    "description": "Sprzedaż hurtowa cukru, czekolady i wyrobów cukierniczych"
+  },
+  {
+    "code": "46.37.Z",
+    "description": "Sprzedaż hurtowa herbaty, kawy, kakao i przypraw"
+  },
+  {
+    "code": "46.38.Z",
+    "description": "Sprzedaż hurtowa pozostałej żywności"
+  },
+  {
+    "code": "46.39.Z",
+    "description": "Sprzedaż hurtowa niewyspecjalizowana żywności, napojów i wyrobów tytoniowych"
+  },
+  {
+    "code": "46.41.Z",
+    "description": "Sprzedaż hurtowa wyrobów tekstylnych"
+  },
+  {
+    "code": "46.42.Z",
+    "description": "Sprzedaż hurtowa odzieży i obuwia"
+  },
+  {
+    "code": "46.43.Z",
+    "description": "Sprzedaż hurtowa elektrycznych artykułów użytku domowego"
+  },
+  {
+    "code": "46.44.Z",
+    "description": "Sprzedaż hurtowa wyrobów porcelanowych, ceramicznych i szklanych oraz środków czyszczących"
+  },
+  {
+    "code": "46.45.Z",
+    "description": "Sprzedaż hurtowa perfum i kosmetyków"
+  },
+  {
+    "code": "46.46.Z",
+    "description": "Sprzedaż hurtowa wyrobów farmaceutycznych i medycznych"
+  },
+  {
+    "code": "46.47.Z",
+    "description": "Sprzedaż hurtowa mebli do użytku domowego, biurowego i sklepowego, dywanów i sprzętu oświetleniowego"
+  },
+  {
+    "code": "46.48.Z",
+    "description": "Sprzedaż hurtowa zegarków i biżuterii"
+  },
+  {
+    "code": "46.49.Z",
+    "description": "Sprzedaż hurtowa pozostałych artykułów użytku domowego"
+  },
+  {
+    "code": "46.50.Z",
+    "description": "Sprzedaż hurtowa urządzeń technologii informacyjnej i komunikacyjnej"
+  },
+  {
+    "code": "46.61.Z",
+    "description": "Sprzedaż hurtowa maszyn i urządzeń rolniczych oraz dodatkowego wyposażenia"
+  },
+  {
+    "code": "46.62.Z",
+    "description": "Sprzedaż hurtowa obrabiarek"
+  },
+  {
+    "code": "46.63.Z",
+    "description": "Sprzedaż hurtowa maszyn wykorzystywanych w górnictwie, budownictwie oraz inżynierii lądowej i wodnej"
+  },
+  {
+    "code": "46.64.Z",
+    "description": "Sprzedaż hurtowa pozostałych maszyn i urządzeń"
+  },
+  {
+    "code": "46.71.Z",
+    "description": "Sprzedaż hurtowa pojazdów silnikowych, z wyłączeniem motocykli"
+  },
+  {
+    "code": "46.72.Z",
+    "description": "Sprzedaż hurtowa części i akcesoriów do pojazdów silnikowych, z wyłączeniem motocykli"
+  },
+  {
+    "code": "46.73.Z",
+    "description": "Sprzedaż hurtowa motocykli oraz części i akcesoriów do nich"
+  },
+  {
+    "code": "46.81.Z",
+    "description": "Sprzedaż hurtowa paliw stałych, ciekłych, gazowych oraz produktów pochodnych"
+  },
+  {
+    "code": "46.82.Z",
+    "description": "Sprzedaż hurtowa metali i rud metali"
+  },
+  {
+    "code": "46.83.Z",
+    "description": "Sprzedaż hurtowa drewna, materiałów budowlanych i wyposażenia sanitarnego"
+  },
+  {
+    "code": "46.84.Z",
+    "description": "Sprzedaż hurtowa wyrobów metalowych oraz sprzętu i dodatkowego wyposażenia hydraulicznego i grzejnego"
+  },
+  {
+    "code": "46.85.A",
+    "description": "Sprzedaż hurtowa chemicznych nawozów i środków ochrony roślin"
+  },
+  {
+    "code": "46.85.B",
+    "description": "Pozostała sprzedaż hurtowa wyrobów chemicznych"
+  },
+  {
+    "code": "46.86.Z",
+    "description": "Sprzedaż hurtowa pozostałych półproduktów"
+  },
+  {
+    "code": "46.87.Z",
+    "description": "Sprzedaż hurtowa odpadów i złomu"
+  },
+  {
+    "code": "46.89.Z",
+    "description": "Pozostała sprzedaż hurtowa wyspecjalizowana, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "46.90.Z",
+    "description": "Sprzedaż hurtowa niewyspecjalizowana"
+  },
+  {
+    "code": "47.11.Z",
+    "description": "Sprzedaż detaliczna niewyspecjalizowana z przewagą żywności, napojów lub wyrobów tytoniowych"
+  },
+  {
+    "code": "47.12.Z",
+    "description": "Pozostała sprzedaż detaliczna niewyspecjalizowana"
+  },
+  {
+    "code": "47.21.Z",
+    "description": "Sprzedaż detaliczna owoców i warzyw"
+  },
+  {
+    "code": "47.22.Z",
+    "description": "Sprzedaż detaliczna mięsa i wyrobów z mięsa"
+  },
+  {
+    "code": "47.23.Z",
+    "description": "Sprzedaż detaliczna ryb, skorupiaków i mięczaków"
+  },
+  {
+    "code": "47.24.Z",
+    "description": "Sprzedaż detaliczna pieczywa, ciast, wyrobów ciastkarskich i cukierniczych"
+  },
+  {
+    "code": "47.25.Z",
+    "description": "Sprzedaż detaliczna napojów alkoholowych i bezalkoholowych"
+  },
+  {
+    "code": "47.26.Z",
+    "description": "Sprzedaż detaliczna wyrobów tytoniowych"
+  },
+  {
+    "code": "47.27.Z",
+    "description": "Sprzedaż detaliczna pozostałej żywności"
+  },
+  {
+    "code": "47.30.Z",
+    "description": "Sprzedaż detaliczna paliw do pojazdów silnikowych"
+  },
+  {
+    "code": "47.40.Z",
+    "description": "Sprzedaż detaliczna narzędzi technologii informacyjnej i komunikacyjnej"
+  },
+  {
+    "code": "47.51.Z",
+    "description": "Sprzedaż detaliczna wyrobów tekstylnych"
+  },
+  {
+    "code": "47.52.Z",
+    "description": "Sprzedaż detaliczna drobnych wyrobów metalowych, materiałów budowlanych, farb i szkła"
+  },
+  {
+    "code": "47.53.Z",
+    "description": "Sprzedaż detaliczna dywanów, chodników i innych pokryć podłogowych oraz pokryć ściennych"
+  },
+  {
+    "code": "47.54.Z",
+    "description": "Sprzedaż detaliczna elektrycznego sprzętu gospodarstwa domowego"
+  },
+  {
+    "code": "47.55.Z",
+    "description": "Sprzedaż detaliczna mebli, sprzętu oświetleniowego, artykułów stołowych oraz pozostałych artykułów użytku domowego"
+  },
+  {
+    "code": "47.61.Z",
+    "description": "Sprzedaż detaliczna książek"
+  },
+  {
+    "code": "47.62.Z",
+    "description": "Sprzedaż detaliczna gazet i pozostałych periodyków oraz artykułów papierniczych"
+  },
+  {
+    "code": "47.63.Z",
+    "description": "Sprzedaż detaliczna sprzętu sportowego"
+  },
+  {
+    "code": "47.64.Z",
+    "description": "Sprzedaż detaliczna gier i zabawek"
+  },
+  {
+    "code": "47.69.A",
+    "description": "Sprzedaż detaliczna instrumentów muzycznych i nut"
+  },
+  {
+    "code": "47.69.B",
+    "description": "Sprzedaż detaliczna dzieł sztuki"
+  },
+  {
+    "code": "47.69.C",
+    "description": "Sprzedaż detaliczna pozostałych wyrobów związanych z kulturą i rekreacją, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "47.71.Z",
+    "description": "Sprzedaż detaliczna odzieży"
+  },
+  {
+    "code": "47.72.Z",
+    "description": "Sprzedaż detaliczna obuwia i wyrobów skórzanych"
+  },
+  {
+    "code": "47.73.Z",
+    "description": "Sprzedaż detaliczna wyrobów farmaceutycznych"
+  },
+  {
+    "code": "47.74.Z",
+    "description": "Sprzedaż detaliczna wyrobów medycznych i ortopedycznych"
+  },
+  {
+    "code": "47.75.Z",
+    "description": "Sprzedaż detaliczna kosmetyków i artykułów toaletowych"
+  },
+  {
+    "code": "47.76.A",
+    "description": "Sprzedaż detaliczna kwiatów, roślin, nasion, nawozów i środków ochrony roślin"
+  },
+  {
+    "code": "47.76.B",
+    "description": "Sprzedaż detaliczna żywych zwierząt domowych, karmy dla zwierząt domowych"
+  },
+  {
+    "code": "47.77.Z",
+    "description": "Sprzedaż detaliczna zegarków i biżuterii"
+  },
+  {
+    "code": "47.78.Z",
+    "description": "Sprzedaż detaliczna pozostałych nowych wyrobów"
+  },
+  {
+    "code": "47.79.A",
+    "description": "Sprzedaż detaliczna używanych lub antykwarycznych książek"
+  },
+  {
+    "code": "47.79.B",
+    "description": "Sprzedaż detaliczna antyków"
+  },
+  {
+    "code": "47.79.C",
+    "description": "Sprzedaż detaliczna pozostałych artykułów używanych"
+  },
+  {
+    "code": "47.81.Z",
+    "description": "Sprzedaż detaliczna pojazdów silnikowych, z wyłączeniem motocykli"
+  },
+  {
+    "code": "47.82.Z",
+    "description": "Sprzedaż detaliczna części i akcesoriów do pojazdów silnikowych, z wyłączeniem motocykli"
+  },
+  {
+    "code": "47.83.Z",
+    "description": "Sprzedaż detaliczna motocykli oraz części i akcesoriów do nich"
+  },
+  {
+    "code": "47.91.Z",
+    "description": "Pośrednictwo w sprzedaży detalicznej niewyspecjalizowanej"
+  },
+  {
+    "code": "47.92.Z",
+    "description": "Pośrednictwo w sprzedaży detalicznej wyspecjalizowanej"
+  },
+  {
+    "code": "49.11.Z",
+    "description": "Transport kolejowy pasażerski ciężki"
+  },
+  {
+    "code": "49.12.Z",
+    "description": "Pozostały szynowy transport pasażerski"
+  },
+  {
+    "code": "49.20.Z",
+    "description": "Transport kolejowy towarów"
+  },
+  {
+    "code": "49.31.Z",
+    "description": "Transport drogowy pasażerski rozkładowy"
+  },
+  {
+    "code": "49.32.Z",
+    "description": "Transport drogowy pasażerski inny niż rozkładowy"
+  },
+  {
+    "code": "49.33.Z",
+    "description": "Transport pasażerski na żądanie pojazdem z kierowcą"
+  },
+  {
+    "code": "49.34.Z",
+    "description": "Transport pasażerski kolejami linowymi i wyciągami narciarskimi"
+  },
+  {
+    "code": "49.39.Z",
+    "description": "Pozostały transport lądowy pasażerski, gdzie indziej niesklasyfikowany"
+  },
+  {
+    "code": "49.41.Z",
+    "description": "Transport drogowy towarów"
+  },
+  {
+    "code": "49.42.Z",
+    "description": "Działalność usługowa związana z przeprowadzkami"
+  },
+  {
+    "code": "49.50.A",
+    "description": "Transport rurociągowy paliw gazowych"
+  },
+  {
+    "code": "49.50.B",
+    "description": "Transport rurociągowy pozostałych towarów"
+  },
+  {
+    "code": "50.10.Z",
+    "description": "Transport morski i przybrzeżny pasażerski"
+  },
+  {
+    "code": "50.20.Z",
+    "description": "Transport morski i przybrzeżny towarów"
+  },
+  {
+    "code": "50.30.Z",
+    "description": "Transport wodny śródlądowy pasażerski"
+  },
+  {
+    "code": "50.40.Z",
+    "description": "Transport wodny śródlądowy towarów"
+  },
+  {
+    "code": "51.10.Z",
+    "description": "Transport lotniczy pasażerski"
+  },
+  {
+    "code": "51.21.Z",
+    "description": "Transport lotniczy towarów"
+  },
+  {
+    "code": "51.22.Z",
+    "description": "Transport kosmiczny"
+  },
+  {
+    "code": "52.10.A",
+    "description": "Magazynowanie i przechowywanie zbóż i nasion oleistych"
+  },
+  {
+    "code": "52.10.B",
+    "description": "Magazynowanie i przechowywanie pozostałych towarów"
+  },
+  {
+    "code": "52.21.A",
+    "description": "Pomoc drogowa"
+  },
+  {
+    "code": "52.21.B",
+    "description": "Pozostała działalność usługowa wspomagająca transport lądowy"
+  },
+  {
+    "code": "52.22.A",
+    "description": "Działalność usługowa wspomagająca transport morski"
+  },
+  {
+    "code": "52.22.B",
+    "description": "Działalność usługowa wspomagająca transport wodny śródlądowy"
+  },
+  {
+    "code": "52.23.Z",
+    "description": "Działalność usługowa wspomagająca transport lotniczy"
+  },
+  {
+    "code": "52.24.A",
+    "description": "Przeładunek towarów w portach morskich"
+  },
+  {
+    "code": "52.24.B",
+    "description": "Przeładunek towarów w portach śródlądowych"
+  },
+  {
+    "code": "52.24.C",
+    "description": "Przeładunek towarów w pozostałych punktach przeładunkowych"
+  },
+  {
+    "code": "52.25.Z",
+    "description": "Działalność logistyczna"
+  },
+  {
+    "code": "52.26.Z",
+    "description": "Pozostała działalność usługowa wspomagająca transport"
+  },
+  {
+    "code": "52.31.Z",
+    "description": "Pośrednictwo w transporcie towarów"
+  },
+  {
+    "code": "52.32.Z",
+    "description": "Pośrednictwo w transporcie pasażerskim"
+  },
+  {
+    "code": "53.10.Z",
+    "description": "Działalność pocztowa objęta obowiązkiem świadczenia usług powszechnych (operatora publicznego)"
+  },
+  {
+    "code": "53.20.Z",
+    "description": "Pozostała działalność pocztowa i kurierska"
+  },
+  {
+    "code": "53.30.Z",
+    "description": "Pośrednictwo w zakresie działalności pocztowej i kurierskiej"
+  },
+  {
+    "code": "55.10.Z",
+    "description": "Hotele i podobne obiekty zakwaterowania"
+  },
+  {
+    "code": "55.20.Z",
+    "description": "Obiekty noclegowe turystyczne i miejsca krótkotrwałego zakwaterowania"
+  },
+  {
+    "code": "55.30.Z",
+    "description": "Pola kempingowe i pola namiotowe"
+  },
+  {
+    "code": "55.40.Z",
+    "description": "Pośrednictwo w zakwaterowaniu"
+  },
+  {
+    "code": "55.90.Z",
+    "description": "Pozostałe zakwaterowanie"
+  },
+  {
+    "code": "56.11.Z",
+    "description": "Restauracje"
+  },
+  {
+    "code": "56.12.Z",
+    "description": "Ruchome placówki gastronomiczne"
+  },
+  {
+    "code": "56.21.Z",
+    "description": "Okazjonalne przygotowywanie i dostarczanie żywności dla odbiorców zewnętrznych (katering okazjonalny)"
+  },
+  {
+    "code": "56.22.Z",
+    "description": "Regularne przygotowywanie i dostarczanie żywności dla odbiorców zewnętrznych (katering regularny) i pozostała gastronomiczna działalność usługowa"
+  },
+  {
+    "code": "56.30.Z",
+    "description": "Podawanie napojów"
+  },
+  {
+    "code": "56.40.Z",
+    "description": "Pośrednictwo w zakresie działalności usługowej związanej z wyżywieniem"
+  },
+  {
+    "code": "58.11.Z",
+    "description": "Wydawanie książek"
+  },
+  {
+    "code": "58.12.Z",
+    "description": "Wydawanie gazet"
+  },
+  {
+    "code": "58.13.Z",
+    "description": "Wydawanie czasopism i pozostałych periodyków"
+  },
+  {
+    "code": "58.19.Z",
+    "description": "Pozostała działalność wydawnicza, z wyłączeniem w zakresie oprogramowania"
+  },
+  {
+    "code": "58.21.Z",
+    "description": "Działalność wydawnicza w zakresie gier komputerowych"
+  },
+  {
+    "code": "58.29.Z",
+    "description": "Działalność wydawnicza w zakresie pozostałego oprogramowania"
+  },
+  {
+    "code": "59.11.Z",
+    "description": "Działalność związana z produkcją filmów, nagrań wideo i programów telewizyjnych"
+  },
+  {
+    "code": "59.12.Z",
+    "description": "Działalność postprodukcyjna związana z filmami, nagraniami wideo i programami telewizyjnymi"
+  },
+  {
+    "code": "59.13.Z",
+    "description": "Działalność związana z dystrybucją filmów i nagrań wideo"
+  },
+  {
+    "code": "59.14.Z",
+    "description": "Działalność związana z projekcją filmów"
+  },
+  {
+    "code": "59.20.Z",
+    "description": "Działalność w zakresie nagrań dźwiękowych i muzycznych"
+  },
+  {
+    "code": "60.10.Z",
+    "description": "Nadawanie programów radiofonicznych i dystrybucja nagrań dźwiękowych"
+  },
+  {
+    "code": "60.20.Z",
+    "description": "Nadawanie programów telewizyjnych ogólnodostępnych i abonamentowych oraz dystrybucja nagrań wideo"
+  },
+  {
+    "code": "60.31.Z",
+    "description": "Działalność agencji informacyjnych"
+  },
+  {
+    "code": "60.39.Z",
+    "description": "Pozostała działalność związana z dystrybucją treści"
+  },
+  {
+    "code": "61.10.A",
+    "description": "Działalność w zakresie wymiany ruchu internetowego"
+  },
+  {
+    "code": "61.10.B",
+    "description": "Pozostała działalność w zakresie telekomunikacji przewodowej, bezprzewodowej i satelitarnej"
+  },
+  {
+    "code": "61.20.Z",
+    "description": "Działalność w zakresie odsprzedaży usług telekomunikacyjnych oraz pośrednictwo w telekomunikacji"
+  },
+  {
+    "code": "61.90.A",
+    "description": "Działalność w obszarze komunikacji internetowej"
+  },
+  {
+    "code": "61.90.B",
+    "description": "Działalność w zakresie pozostałej telekomunikacji, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "62.10.A",
+    "description": "Działalność w zakresie programowania gier komputerowych"
+  },
+  {
+    "code": "62.10.B",
+    "description": "Pozostała działalność w zakresie programowania"
+  },
+  {
+    "code": "62.20.A",
+    "description": "Działalność w zakresie cyberbezpieczeństwa"
+  },
+  {
+    "code": "62.20.B",
+    "description": "Pozostała działalność związana z doradztwem w zakresie informatyki oraz zarządzaniem urządzeniami informatycznymi"
+  },
+  {
+    "code": "62.90.Z",
+    "description": "Pozostała działalność usługowa w zakresie technologii informatycznych i komputerowych"
+  },
+  {
+    "code": "63.10.A",
+    "description": "Działalność w zakresie kolokacji centrów danych oraz przetwarzania w chmurze"
+  },
+  {
+    "code": "63.10.B",
+    "description": "Działalność usługowa w zakresie DNS"
+  },
+  {
+    "code": "63.10.C",
+    "description": "Działalność w zakresie serwerów sieci dostarczania treści (content delivery network)"
+  },
+  {
+    "code": "63.10.D",
+    "description": "Pozostała działalność usługowa w zakresie infrastruktury obliczeniowej, przetwarzania danych, zarządzania stronami internetowymi (hosting) i działalności powiązane"
+  },
+  {
+    "code": "63.91.Z",
+    "description": "Działalność wyszukiwarek internetowych"
+  },
+  {
+    "code": "63.92.Z",
+    "description": "Pozostała działalność usługowa w zakresie informacji"
+  },
+  {
+    "code": "64.11.Z",
+    "description": "Działalność banku centralnego"
+  },
+  {
+    "code": "64.19.Z",
+    "description": "Pozostałe pośrednictwo pieniężne"
+  },
+  {
+    "code": "64.21.Z",
+    "description": "Działalność spółek holdingowych"
+  },
+  {
+    "code": "64.22.Z",
+    "description": "Działalność spółek pozyskujących finansowanie na rzecz innych podmiotów"
+  },
+  {
+    "code": "64.31.Z",
+    "description": "Działalność funduszy rynku pieniężnego i funduszy inwestycyjnych niebędących funduszami rynku pieniężnego"
+  },
+  {
+    "code": "64.32.Z",
+    "description": "Działalność instytucji powierniczych"
+  },
+  {
+    "code": "64.91.Z",
+    "description": "Leasing finansowy"
+  },
+  {
+    "code": "64.92.A",
+    "description": "Działalność lombardów"
+  },
+  {
+    "code": "64.92.B",
+    "description": "Pozostałe formy udzielania kredytów, gdzie indziej niesklasyfikowane"
+  },
+  {
+    "code": "64.99.Z",
+    "description": "Pozostała finansowa działalność usługowa, z wyłączeniem ubezpieczeń i funduszy emerytalnych, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "65.11.Z",
+    "description": "Działalność w zakresie ubezpieczeń na życie"
+  },
+  {
+    "code": "65.12.Z",
+    "description": "Działalność w zakresie pozostałych ubezpieczeń osobowych oraz ubezpieczeń majątkowych"
+  },
+  {
+    "code": "65.20.Z",
+    "description": "Działalność w zakresie reasekuracji"
+  },
+  {
+    "code": "65.30.Z",
+    "description": "Działalność w zakresie funduszy emerytalnych"
+  },
+  {
+    "code": "66.11.Z",
+    "description": "Zarządzanie rynkami finansowymi"
+  },
+  {
+    "code": "66.12.Z",
+    "description": "Działalność maklerska związana z rynkiem papierów wartościowych i towarów giełdowych"
+  },
+  {
+    "code": "66.19.Z",
+    "description": "Pozostała działalność wspomagająca usługi finansowe, z wyłączeniem ubezpieczeń i funduszy emerytalnych"
+  },
+  {
+    "code": "66.21.Z",
+    "description": "Działalność związana z oceną ryzyka i szacowaniem poniesionych strat"
+  },
+  {
+    "code": "66.22.Z",
+    "description": "Działalność agentów i brokerów ubezpieczeniowych"
+  },
+  {
+    "code": "66.29.Z",
+    "description": "Działalność wspomagająca ubezpieczenia i fundusze emerytalne, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "66.30.Z",
+    "description": "Działalność związana z zarządzaniem funduszami"
+  },
+  {
+    "code": "68.11.Z",
+    "description": "Kupno i sprzedaż nieruchomości na własny rachunek"
+  },
+  {
+    "code": "68.12.A",
+    "description": "Realizacja projektów budowlanych związanych ze wznoszeniem budynków mieszkalnych"
+  },
+  {
+    "code": "68.12.B",
+    "description": "Realizacja projektów budowlanych związanych ze wznoszeniem budynków niemieszkalnych"
+  },
+  {
+    "code": "68.12.C",
+    "description": "Realizacja pozostałych projektów budowlanych"
+  },
+  {
+    "code": "68.20.Z",
+    "description": "Wynajem i zarządzanie nieruchomościami własnymi lub dzierżawionymi"
+  },
+  {
+    "code": "68.31.Z",
+    "description": "Pośrednictwo w obrocie nieruchomościami"
+  },
+  {
+    "code": "68.32.A",
+    "description": "Działalność związana z wyceną nieruchomości"
+  },
+  {
+    "code": "68.32.B",
+    "description": "Działalność związana z zarządzaniem nieruchomościami wykonywanym na zlecenie"
+  },
+  {
+    "code": "68.32.C",
+    "description": "Pozostała działalność związana z obsługą rynku nieruchomości wykonywana na zlecenie, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "69.10.Z",
+    "description": "Działalność prawnicza"
+  },
+  {
+    "code": "69.20.A",
+    "description": "Działalność rachunkowo-księgowa"
+  },
+  {
+    "code": "69.20.B",
+    "description": "Doradztwo podatkowe"
+  },
+  {
+    "code": "69.20.C",
+    "description": "Działalność w zakresie audytu finansowego"
+  },
+  {
+    "code": "70.10.A",
+    "description": "Działalność biur głównych"
+  },
+  {
+    "code": "70.10.B",
+    "description": "Działalność central usług wspólnych"
+  },
+  {
+    "code": "70.20.Z",
+    "description": "Doradztwo w zakresie prowadzenia działalności gospodarczej i pozostałe doradztwo w zakresie zarządzania"
+  },
+  {
+    "code": "71.11.Z",
+    "description": "Działalność w zakresie architektury"
+  },
+  {
+    "code": "71.12.A",
+    "description": "Działalność w zakresie geodezji i kartografii"
+  },
+  {
+    "code": "71.12.B",
+    "description": "Pozostała działalność w zakresie inżynierii i związane z nią doradztwo techniczne"
+  },
+  {
+    "code": "71.20.A",
+    "description": "Badania i analizy związane z jakością żywności"
+  },
+  {
+    "code": "71.20.B",
+    "description": "Kontrola i wydawanie opinii o stanie technicznym przewodów kominowych oraz wentylacyjnych"
+  },
+  {
+    "code": "71.20.C",
+    "description": "Pozostałe badania i analizy techniczne"
+  },
+  {
+    "code": "72.10.Z",
+    "description": "Badania naukowe i prace rozwojowe w dziedzinie nauk przyrodniczych i technicznych"
+  },
+  {
+    "code": "72.20.Z",
+    "description": "Badania naukowe i prace rozwojowe w dziedzinie nauk społecznych i humanistycznych"
+  },
+  {
+    "code": "73.11.Z",
+    "description": "Działalność agencji reklamowych"
+  },
+  {
+    "code": "73.12.Z",
+    "description": "Reklama poprzez środki masowego przekazu"
+  },
+  {
+    "code": "73.20.Z",
+    "description": "Badanie rynku i opinii publicznej"
+  },
+  {
+    "code": "73.30.A",
+    "description": "Działalność lobbingowa"
+  },
+  {
+    "code": "73.30.B",
+    "description": "Działalność pozostała w zakresie public relations i komunikacji"
+  },
+  {
+    "code": "74.11.Z",
+    "description": "Działalność w zakresie wzornictwa przemysłowego i projektowania mody"
+  },
+  {
+    "code": "74.12.Z",
+    "description": "Działalność w zakresie projektowania graficznego i komunikacji wizualnej"
+  },
+  {
+    "code": "74.13.Z",
+    "description": "Działalność w zakresie projektowania wnętrz"
+  },
+  {
+    "code": "74.14.Z",
+    "description": "Pozostała działalność w zakresie specjalistycznego projektowania"
+  },
+  {
+    "code": "74.20.Z",
+    "description": "Działalność fotograficzna"
+  },
+  {
+    "code": "74.30.Z",
+    "description": "Działalność związana z tłumaczeniami"
+  },
+  {
+    "code": "74.91.Z",
+    "description": "Działalność rzeczników patentowych i działalność marketingowa"
+  },
+  {
+    "code": "74.99.Z",
+    "description": "Wszelka pozostała działalność profesjonalna, naukowa i techniczna, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "75.00.Z",
+    "description": "Działalność weterynaryjna"
+  },
+  {
+    "code": "77.11.Z",
+    "description": "Wynajem i dzierżawa samochodów osobowych i lekkich pojazdów silnikowych, w tym motocykli"
+  },
+  {
+    "code": "77.12.Z",
+    "description": "Wynajem i dzierżawa samochodów ciężarowych"
+  },
+  {
+    "code": "77.21.Z",
+    "description": "Wypożyczanie i dzierżawa sprzętu rekreacyjnego i sportowego"
+  },
+  {
+    "code": "77.22.Z",
+    "description": "Wypożyczanie i dzierżawa pozostałych artykułów użytku osobistego i domowego"
+  },
+  {
+    "code": "77.31.Z",
+    "description": "Wynajem i dzierżawa maszyn i urządzeń rolniczych"
+  },
+  {
+    "code": "77.32.Z",
+    "description": "Wynajem i dzierżawa maszyn i urządzeń budowlanych"
+  },
+  {
+    "code": "77.33.Z",
+    "description": "Wynajem i dzierżawa maszyn i urządzeń biurowych oraz komputerów"
+  },
+  {
+    "code": "77.34.Z",
+    "description": "Wynajem i dzierżawa środków transportu wodnego"
+  },
+  {
+    "code": "77.35.Z",
+    "description": "Wynajem i dzierżawa środków transportu lotniczego"
+  },
+  {
+    "code": "77.39.Z",
+    "description": "Wynajem i dzierżawa pozostałych maszyn, urządzeń oraz dóbr materialnych, gdzie indziej niesklasyfikowane"
+  },
+  {
+    "code": "77.40.A",
+    "description": "Działalność związana z dzierżawą i rejestracją nazw domen internetowych"
+  },
+  {
+    "code": "77.40.B",
+    "description": "Pozostała dzierżawa własności intelektualnej i podobnych produktów, z wyłączeniem prac chronionych prawem autorskim"
+  },
+  {
+    "code": "77.51.Z",
+    "description": "Pośrednictwo w wynajmie i dzierżawie samochodów osobowych, samochodów kempingowych i przyczep"
+  },
+  {
+    "code": "77.52.Z",
+    "description": "Pośrednictwo w wynajmie i dzierżawie pozostałych dóbr materialnych oraz niefinansowych wartości niematerialnych i prawnych"
+  },
+  {
+    "code": "78.10.Z",
+    "description": "Działalność związana z wyszukiwaniem miejsc pracy i pozyskiwaniem pracowników"
+  },
+  {
+    "code": "78.20.Z",
+    "description": "Działalność agencji pracy tymczasowej i pozostała działalność związana z udostępnianiem pracowników"
+  },
+  {
+    "code": "79.11.Z",
+    "description": "Działalność agentów turystycznych"
+  },
+  {
+    "code": "79.12.Z",
+    "description": "Działalność organizatorów turystyki"
+  },
+  {
+    "code": "79.90.Z",
+    "description": "Pozostała działalność usługowa w zakresie rezerwacji oraz działalności z nią związane"
+  },
+  {
+    "code": "80.01.Z",
+    "description": "Działalność detektywistyczna i działalność ochroniarska w zakresie ochrony osobistej"
+  },
+  {
+    "code": "80.09.Z",
+    "description": "Działalność ochroniarska, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "81.10.Z",
+    "description": "Działalność pomocnicza związana z utrzymaniem porządku w budynkach"
+  },
+  {
+    "code": "81.21.Z",
+    "description": "Niespecjalistyczne sprzątanie budynków"
+  },
+  {
+    "code": "81.22.A",
+    "description": "Czyszczenie kominów i palenisk, pieców, przewodów wentylacyjnych"
+  },
+  {
+    "code": "81.22.B",
+    "description": "Pozostałe sprzątanie budynków i obiektów przemysłowych, gdzie indziej niesklasyfikowane"
+  },
+  {
+    "code": "81.23.A",
+    "description": "Działalność usługowa związana z dezynfekcją, dezynsekcją i deratyzacją"
+  },
+  {
+    "code": "81.23.B",
+    "description": "Pozostała działalność związana ze sprzątaniem, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "81.30.Z",
+    "description": "Działalność usługowa związana z zagospodarowaniem terenów zieleni"
+  },
+  {
+    "code": "82.10.Z",
+    "description": "Działalność związana z administracyjną obsługą biura, włączając działalność wspomagającą"
+  },
+  {
+    "code": "82.20.Z",
+    "description": "Działalność centrów telefonicznych (call center)"
+  },
+  {
+    "code": "82.30.Z",
+    "description": "Działalność związana z organizacją targów, wystaw i kongresów"
+  },
+  {
+    "code": "82.40.Z",
+    "description": "Pośrednictwo w zakresie działalności wspomagającej prowadzenie działalności gospodarczej, gdzie indziej niesklasyfikowane"
+  },
+  {
+    "code": "82.91.Z",
+    "description": "Działalność świadczona przez agencje inkasa i biura kredytowe"
+  },
+  {
+    "code": "82.92.Z",
+    "description": "Działalność związana z pakowaniem"
+  },
+  {
+    "code": "82.99.A",
+    "description": "Finansowanie społecznościowe dla przedsięwzięć gospodarczych"
+  },
+  {
+    "code": "82.99.B",
+    "description": "Działalność wspomagająca prowadzenie działalności gospodarczej, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "84.11.Z",
+    "description": "Kierowanie podstawowymi rodzajami działalności publicznej"
+  },
+  {
+    "code": "84.12.Z",
+    "description": "Kierowanie działalnością usługową w zakresie ochrony zdrowia, edukacji, kultury oraz pozostałych usług społecznych"
+  },
+  {
+    "code": "84.13.Z",
+    "description": "Kierowanie w zakresie efektywności gospodarowania"
+  },
+  {
+    "code": "84.21.Z",
+    "description": "Sprawy zagraniczne"
+  },
+  {
+    "code": "84.22.Z",
+    "description": "Obrona narodowa"
+  },
+  {
+    "code": "84.23.Z",
+    "description": "Wymiar sprawiedliwości"
+  },
+  {
+    "code": "84.24.Z",
+    "description": "Bezpieczeństwo państwa, porządek i bezpieczeństwo publiczne"
+  },
+  {
+    "code": "84.25.Z",
+    "description": "Ochrona przeciwpożarowa"
+  },
+  {
+    "code": "84.30.Z",
+    "description": "Obowiązkowe ubezpieczenia społeczne"
+  },
+  {
+    "code": "85.10.Z",
+    "description": "Placówki wychowania przedszkolnego"
+  },
+  {
+    "code": "85.20.Z",
+    "description": "Szkoły podstawowe"
+  },
+  {
+    "code": "85.31.Z",
+    "description": "Szkoły średnie ogólnokształcące"
+  },
+  {
+    "code": "85.32.A",
+    "description": "Technika"
+  },
+  {
+    "code": "85.32.B",
+    "description": "Branżowe szkoły I stopnia"
+  },
+  {
+    "code": "85.32.C",
+    "description": "Branżowe szkoły II stopnia"
+  },
+  {
+    "code": "85.32.D",
+    "description": "Szkoły specjalne przysposabiające do pracy"
+  },
+  {
+    "code": "85.33.A",
+    "description": "Szkoły policealne"
+  },
+  {
+    "code": "85.33.B",
+    "description": "Kolegia pracowników służb społecznych"
+  },
+  {
+    "code": "85.40.Z",
+    "description": "Szkoły wyższe"
+  },
+  {
+    "code": "85.51.Z",
+    "description": "Pozostałe formy edukacji sportowej oraz zajęć sportowych i rekreacyjnych"
+  },
+  {
+    "code": "85.52.Z",
+    "description": "Pozostałe formy edukacji artystycznej"
+  },
+  {
+    "code": "85.53.Z",
+    "description": "Pozostałe formy edukacji z zakresu nauki jazdy i pilotażu"
+  },
+  {
+    "code": "85.59.A",
+    "description": "Nauka języków obcych"
+  },
+  {
+    "code": "85.59.B",
+    "description": "Kursy i szkolenia związane ze zdobywaniem wiedzy, umiejętności i kwalifikacji zawodowych w formach pozaszkolnych"
+  },
+  {
+    "code": "85.59.C",
+    "description": "Placówki doskonalenia nauczycieli"
+  },
+  {
+    "code": "85.59.D",
+    "description": "Pozostałe pozaszkolne formy edukacji, gdzie indziej niesklasyfikowane"
+  },
+  {
+    "code": "85.61.Z",
+    "description": "Pośrednictwo w zakresie prowadzenia kursów i korepetycji"
+  },
+  {
+    "code": "85.69.Z",
+    "description": "Działalność wspomagająca edukację, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "86.10.Z",
+    "description": "Działalność szpitali"
+  },
+  {
+    "code": "86.21.Z",
+    "description": "Praktyka lekarska ogólna"
+  },
+  {
+    "code": "86.22.Z",
+    "description": "Praktyka lekarska specjalistyczna"
+  },
+  {
+    "code": "86.23.Z",
+    "description": "Praktyka dentystyczna"
+  },
+  {
+    "code": "86.91.A",
+    "description": "Działalność w zakresie diagnostyki obrazowej"
+  },
+  {
+    "code": "86.91.B",
+    "description": "Działalność samodzielnych laboratoriów medycznych"
+  },
+  {
+    "code": "86.92.Z",
+    "description": "Transport pacjentów karetką"
+  },
+  {
+    "code": "86.93.Z",
+    "description": "Działalność psychologiczna i psychoterapeutyczna, z wyłączeniem lekarskiej"
+  },
+  {
+    "code": "86.94.Z",
+    "description": "Działalność pielęgniarska i położnicza"
+  },
+  {
+    "code": "86.95.Z",
+    "description": "Działalność w zakresie fizjoterapii"
+  },
+  {
+    "code": "86.96.Z",
+    "description": "Działalność w zakresie medycyny tradycyjnej, uzupełniającej i alternatywnej"
+  },
+  {
+    "code": "86.97.Z",
+    "description": "Pośrednictwo związane z działalnością lekarską, dentystyczną i pozostałą działalnością w zakresie opieki zdrowotnej"
+  },
+  {
+    "code": "86.99.A",
+    "description": "Opieka farmaceutyczna"
+  },
+  {
+    "code": "86.99.B",
+    "description": "Działalność dietetyczna"
+  },
+  {
+    "code": "86.99.C",
+    "description": "Działalność logopedyczna"
+  },
+  {
+    "code": "86.99.D",
+    "description": "Działalność w zakresie pozostałej opieki zdrowotnej"
+  },
+  {
+    "code": "87.10.Z",
+    "description": "Pomoc społeczna z zakwaterowaniem zapewniająca opiekę pielęgniarską"
+  },
+  {
+    "code": "87.20.Z",
+    "description": "Pomoc społeczna z zakwaterowaniem dla osób z zaburzeniami psychicznymi lub uzależnieniami"
+  },
+  {
+    "code": "87.30.Z",
+    "description": "Pomoc społeczna z zakwaterowaniem dla osób starszych lub osób z niepełnosprawnościami ruchowymi"
+  },
+  {
+    "code": "87.91.Z",
+    "description": "Pośrednictwo w zakresie pomocy społecznej z zakwaterowaniem"
+  },
+  {
+    "code": "87.99.Z",
+    "description": "Pozostała pomoc społeczna z zakwaterowaniem, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "88.10.Z",
+    "description": "Pomoc społeczna bez zakwaterowania dla osób starszych lub osób z niepełnosprawnościami"
+  },
+  {
+    "code": "88.91.Z",
+    "description": "Opieka dzienna nad dziećmi"
+  },
+  {
+    "code": "88.99.Z",
+    "description": "Pozostała pomoc społeczna bez zakwaterowania, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "90.11.Z",
+    "description": "Działalność literacka i działalność związana z komponowaniem muzyki"
+  },
+  {
+    "code": "90.12.Z",
+    "description": "Działalność twórcza w zakresie sztuk wizualnych"
+  },
+  {
+    "code": "90.13.Z",
+    "description": "Pozostała działalność twórcza"
+  },
+  {
+    "code": "90.20.A",
+    "description": "Działalność artystyczna filharmonii, orkiestr i chórów"
+  },
+  {
+    "code": "90.20.B",
+    "description": "Działalność teatralna"
+  },
+  {
+    "code": "90.20.C",
+    "description": "Pozostała działalność związana z wystawianiem przedstawień artystycznych"
+  },
+  {
+    "code": "90.31.A",
+    "description": "Działalność centrów kultury, domów i ośrodków kultury, klubów i świetlic"
+  },
+  {
+    "code": "90.31.B",
+    "description": "Działalność pozostałych obiektów kulturalnych"
+  },
+  {
+    "code": "90.39.Z",
+    "description": "Pozostała działalność wspomagająca działalność twórczą i działalność związaną z wystawianiem przedstawień artystycznych"
+  },
+  {
+    "code": "91.11.Z",
+    "description": "Działalność bibliotek"
+  },
+  {
+    "code": "91.12.Z",
+    "description": "Działalność archiwów"
+  },
+  {
+    "code": "91.21.A",
+    "description": "Działalność muzeów"
+  },
+  {
+    "code": "91.21.B",
+    "description": "Działalność galerii sztuki"
+  },
+  {
+    "code": "91.21.C",
+    "description": "Działalność pozostałych podmiotów prezentujących kolekcje dzieł sztuki"
+  },
+  {
+    "code": "91.22.Z",
+    "description": "Działalność związana z miejscami historycznymi i pomnikami"
+  },
+  {
+    "code": "91.30.Z",
+    "description": "Działalność w zakresie konserwacji i renowacji oraz pozostała działalność wspomagająca na rzecz dziedzictwa kulturowego"
+  },
+  {
+    "code": "91.41.A",
+    "description": "Działalność ogrodów botanicznych"
+  },
+  {
+    "code": "91.41.B",
+    "description": "Działalność ogrodów zoologicznych"
+  },
+  {
+    "code": "91.42.Z",
+    "description": "Działalność obszarów i obiektów ochrony przyrody"
+  },
+  {
+    "code": "92.00.Z",
+    "description": "Działalność związana z grami hazardowymi"
+  },
+  {
+    "code": "93.11.Z",
+    "description": "Działalność obiektów sportowych"
+  },
+  {
+    "code": "93.12.Z",
+    "description": "Działalność klubów sportowych"
+  },
+  {
+    "code": "93.13.Z",
+    "description": "Działalność klubów fitness"
+  },
+  {
+    "code": "93.19.Z",
+    "description": "Działalność sportowa, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "93.21.Z",
+    "description": "Działalność wesołych miasteczek i parków rozrywki"
+  },
+  {
+    "code": "93.29.A",
+    "description": "Działalność pokojów zagadek, domów strachu, miejsc do tańczenia i w zakresie innych form rozrywki lub rekreacji organizowanych w pomieszczeniach lub w innych miejscach o zamkniętej przestrzeni"
+  },
+  {
+    "code": "93.29.B",
+    "description": "Pozostała działalność rozrywkowa i rekreacyjna, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "94.11.Z",
+    "description": "Działalność organizacji komercyjnych i pracodawców"
+  },
+  {
+    "code": "94.12.Z",
+    "description": "Działalność członkowskich organizacji zawodowych"
+  },
+  {
+    "code": "94.20.Z",
+    "description": "Działalność związków zawodowych"
+  },
+  {
+    "code": "94.91.Z",
+    "description": "Działalność organizacji religijnych"
+  },
+  {
+    "code": "94.92.Z",
+    "description": "Działalność organizacji politycznych"
+  },
+  {
+    "code": "94.99.Z",
+    "description": "Działalność pozostałych organizacji członkowskich, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "95.10.Z",
+    "description": "Naprawa i konserwacja komputerów i sprzętu (tele)komunikacyjnego"
+  },
+  {
+    "code": "95.21.Z",
+    "description": "Naprawa i konserwacja elektronicznego sprzętu powszechnego użytku"
+  },
+  {
+    "code": "95.22.Z",
+    "description": "Naprawa i konserwacja urządzeń gospodarstwa domowego oraz sprzętu do użytku domowego i ogrodniczego"
+  },
+  {
+    "code": "95.23.Z",
+    "description": "Naprawa i konserwacja obuwia i wyrobów skórzanych"
+  },
+  {
+    "code": "95.24.Z",
+    "description": "Naprawa i konserwacja mebli i wyposażenia domowego"
+  },
+  {
+    "code": "95.25.Z",
+    "description": "Naprawa i konserwacja zegarów, zegarków oraz biżuterii"
+  },
+  {
+    "code": "95.29.Z",
+    "description": "Naprawa i konserwacja artykułów użytku osobistego i domowego, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "95.31.A",
+    "description": "Naprawa mechaniczna i serwisowa pojazdów silnikowych, z wyłączeniem motocykli"
+  },
+  {
+    "code": "95.31.B",
+    "description": "Naprawa blacharsko-lakiernicza oraz konserwacja pojazdów silnikowych, z wyłączeniem motocykli"
+  },
+  {
+    "code": "95.31.C",
+    "description": "Działalność usługowa detailingu pojazdów silnikowych, z wyłączeniem motocykli"
+  },
+  {
+    "code": "95.32.Z",
+    "description": "Naprawa i konserwacja motocykli"
+  },
+  {
+    "code": "95.40.Z",
+    "description": "Pośrednictwo w naprawie i konserwacji komputerów, artykułów użytku osobistego i domowego oraz pojazdów silnikowych, w tym motocykli"
+  },
+  {
+    "code": "96.10.Z",
+    "description": "Pranie i czyszczenie wyrobów tekstylnych i futrzarskich"
+  },
+  {
+    "code": "96.21.Z",
+    "description": "Działalność fryzjerska"
+  },
+  {
+    "code": "96.22.Z",
+    "description": "Działalność w zakresie pielęgnacji urody i pozostała działalność kosmetyczna"
+  },
+  {
+    "code": "96.23.Z",
+    "description": "Działalność spa, saun i łaźni parowych"
+  },
+  {
+    "code": "96.30.Z",
+    "description": "Pogrzeby i działalność pokrewna"
+  },
+  {
+    "code": "96.40.Z",
+    "description": "Pośrednictwo w zakresie usług indywidualnych"
+  },
+  {
+    "code": "96.91.Z",
+    "description": "Działalność usługowa na rzecz osób w miejscu zamieszkania"
+  },
+  {
+    "code": "96.99.Z",
+    "description": "Pozostała działalność usługowa, gdzie indziej niesklasyfikowana"
+  },
+  {
+    "code": "97.00.Z",
+    "description": "Gospodarstwa domowe zatrudniające pracowników"
+  },
+  {
+    "code": "98.10.Z",
+    "description": "Gospodarstwa domowe produkujące wyroby na własne potrzeby"
+  },
+  {
+    "code": "98.20.Z",
+    "description": "Gospodarstwa domowe świadczące usługi na własne potrzeby"
+  },
+  {
+    "code": "99.00.Z",
+    "description": "Organizacje i zespoły eksterytorialne"
+  }
+]
