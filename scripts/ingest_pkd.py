@@ -6,7 +6,7 @@ from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
 
-PKD_FILE = Path(__file__).parent.parent / "pkd.json"
+PKD_FILE = Path(__file__).parent.parent / "pkd_augmented.json"
 QDRANT_HOST = "localhost"
 QDRANT_PORT = 6333
 COLLECTION_NAME = "pkd_codes"
@@ -20,7 +20,9 @@ def load_pkd(path: Path) -> list[dict]:
 
 
 def build_embed_text(pkd: dict) -> str:
-    return f"{pkd['code']} {pkd['description']}"
+    keywords = " ".join(pkd.get("keywords", []))
+    examples = " ".join(pkd.get("examples", []))
+    return f"{pkd['code']} {pkd['description']} {keywords} {examples}"
 
 
 def main():
