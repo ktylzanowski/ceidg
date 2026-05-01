@@ -19,6 +19,7 @@ class RecommendRequest(BaseModel):
 
 
 @app.post("/recommend")
+@app.post("/api/recommend")
 def recommend(req: RecommendRequest):
     if not req.main_description.strip():
         raise HTTPException(status_code=400, detail="main_description nie może być pusty")
