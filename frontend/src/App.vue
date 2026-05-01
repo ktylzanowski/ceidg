@@ -32,7 +32,7 @@
 <script>
 import PkdCard from './components/PkdCard.vue'
 
-const API_URL = 'http://localhost:8000/recommend'
+const API_URL = '/api/recommend'
 
 export default {
   name: 'App',
