@@ -1,9 +1,10 @@
+import asyncio
 import json
 import os
-from groq import Groq
+from groq import AsyncGroq
 from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
-from qdrant_client import QdrantClient
+from qdrant_client import AsyncQdrantClient
 
 load_dotenv()
 
@@ -11,7 +12,7 @@ COLLECTION_NAME = "pkd_codes"
 MODEL_EMBED = "BAAI/bge-m3"
 MODEL_LLM = "llama-3.3-70b-versatile"
 
-groq_client = Groq(api_key=os.environ["GROQ_API_KEY"])
+groq_client = AsyncGroq(api_key=os.environ["GROQ_API_KEY"])
 
 QUESTIONS = [
     ("main_description", "Opisz w kilku słowach, czym chcesz się zajmować w firmie?"),
@@ -19,7 +20,7 @@ QUESTIONS = [
 
 print("Ładuję model embeddingowy...")
 embedder = SentenceTransformer(MODEL_EMBED)
-qdrant = QdrantClient(host="localhost", port=6333)
+qdrant = AsyncQdrantClient(host="localhost", port=6333)
 print("Gotowy.\n")
 
 
@@ -27,16 +28,16 @@ def build_query(answers: dict) -> str:
     return f"Działalność: {answers['main_description']}"
 
 
-def search_pkd(query: str, top_k: int = 20) -> list[dict]:
-    vector = embedder.encode(query, normalize_embeddings=True).tolist()
-    results = qdrant.query_points(
+async def search_pkd(query: str, top_k: int = 20) -> list[dict]:
+    vector = await asyncio.to_thread(embedder.encode, query, normalize_embeddings=True)
+    results = await qdrant.query_points(
         collection_name=COLLECTION_NAME,
-        query=vector,
+        query=vector.tolist(),
         limit=top_k,
-    ).points
+    )
     return [
         {"code": r.payload["code"], "description": r.payload["description"], "score": round(r.score, 3)}
-        for r in results
+        for r in results.points
     ]
 
 
@@ -59,7 +60,7 @@ Kod dodatkowy 62.02.Z (confidence 0.85): "Doradztwo w zakresie informatyki — o
 
 Odpowiadaj wyłącznie w formacie JSON."""
 
-def ask_llm(answers: dict, candidates: list[dict]) -> dict:
+async def ask_llm(answers: dict, candidates: list[dict]) -> dict:
     filtered = [c for c in candidates if c["score"] >= 0.6]
 
     candidates_text = "\n".join(
@@ -82,7 +83,7 @@ Odpowiedz w formacie JSON:
   ]
 }}"""
 
-    response = groq_client.chat.completions.create(
+    response = await groq_client.chat.completions.create(
         model=MODEL_LLM,
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
@@ -134,7 +135,7 @@ def print_result(result: dict):
     print("=" * 50 + "\n")
 
 
-def main():
+async def main():
     print("=" * 50)
     print("Chatbot PKD/CEIDG")
     print("=" * 50 + "\n")
@@ -149,12 +150,12 @@ def main():
 
     print("Szukam dopasowań w bazie PKD...")
     query = build_query(answers)
-    candidates = search_pkd(query)
+    candidates = await search_pkd(query)
     print(f"Znaleziono {len(candidates)} kandydatów. Analizuję przez LLM...")
 
-    result = ask_llm(answers, candidates)
+    result = await ask_llm(answers, candidates)
     print_result(result)
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

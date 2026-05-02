@@ -13,7 +13,7 @@
           :class="{ invalid: validationError }"
           placeholder="np. Prowadzę sklep internetowy z elektroniką, zajmuję się sprzedażą i serwisem laptopów."
           rows="4"
-          @input="validationError = false"
+          @input="validationError = false; error = null"
         />
         <button @click="recommend" :disabled="loading || !description.trim()">
           <span v-if="loading" class="spinner" />
