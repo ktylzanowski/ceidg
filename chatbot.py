@@ -45,7 +45,7 @@ async def search_pkd(query: str, top_k: int = 20) -> list[dict]:
 
 class PkdCode(BaseModel):
     code: str
-    description: str
+    description: str = ""
     justification: str
     confidence: float = Field(default=1.0, ge=0.0, le=1.0)
 
@@ -96,9 +96,9 @@ Wybierz 1 kod główny i tyle kodów dodatkowych ile faktycznie pasuje do dział
 
 Odpowiedz w formacie JSON:
 {{
-  "main": {{"code": "XX.XX.X", "description": "...", "justification": "...", "confidence": 0.0}},
+  "main": {{"code": "XX.XX.X", "justification": "...", "confidence": 0.0}},
   "additional": [
-    {{"code": "XX.XX.X", "description": "...", "justification": "...", "confidence": 0.0}}
+    {{"code": "XX.XX.X", "justification": "...", "confidence": 0.0}}
   ]
 }}"""
 
@@ -121,7 +121,18 @@ Odpowiedz w formacie JSON:
     except ValidationError as e:
         raise ValueError(f"Niepoprawna struktura odpowiedzi LLM: {e}") from e
 
-    validated.additional = [c for c in validated.additional if c.confidence >= 0.7]
+    descriptions = {c["code"]: c["description"] for c in candidates}
+
+    if validated.main.code not in descriptions:
+        raise ValueError(f"Kod główny {validated.main.code} nie pochodzi z bazy kandydatów")
+    validated.main.description = descriptions[validated.main.code]
+
+    validated.additional = [
+        c for c in validated.additional
+        if c.confidence >= 0.7 and c.code in descriptions
+    ]
+    for c in validated.additional:
+        c.description = descriptions[c.code]
 
     if validated.additional:
         best = max(validated.additional, key=lambda c: c.confidence)
