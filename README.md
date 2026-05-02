@@ -1,5 +1,7 @@
 # PKD Recommender
 
+![PKD Recommender](pkd.PNG)
+
 A web application that helps Polish entrepreneurs find the right PKD codes (Polska Klasyfikacja Działalności — Polish Classification of Activities) based on a natural language description of their business.
 
 ## How it works
