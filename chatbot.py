@@ -55,11 +55,11 @@ Uwaga: jeśli działalność to wyłącznie sprzedaż detaliczna przez internet,
 Kandydaci z bazy PKD:
 {candidates_text}
 
-Wybierz 1 kod główny i maksymalnie 5 dodatkowych. Odpowiedz tylko w formacie JSON:
+Wybierz 1 kod główny i tyle kodów dodatkowych ile faktycznie pasuje do działalności. Dla każdego kodu dodatkowego oceń jego trafność (confidence od 0.0 do 1.0). Odpowiedz tylko w formacie JSON:
 {{
   "main": {{"code": "XX.XX.X", "description": "...", "justification": "..."}},
   "additional": [
-    {{"code": "XX.XX.X", "description": "...", "justification": "..."}}
+    {{"code": "XX.XX.X", "description": "...", "justification": "...", "confidence": 0.0}}
   ]
 }}"""
 
@@ -69,7 +69,12 @@ Wybierz 1 kod główny i maksymalnie 5 dodatkowych. Odpowiedz tylko w formacie J
         response_format={"type": "json_object"},
     )
 
-    return json.loads(response.choices[0].message.content)
+    result = json.loads(response.choices[0].message.content)
+    result["additional"] = [
+        c for c in result.get("additional", [])
+        if c.get("confidence", 0) >= 0.7
+    ]
+    return result
 
 
 def print_result(result: dict):
