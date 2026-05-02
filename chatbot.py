@@ -9,7 +9,7 @@ load_dotenv()
 
 COLLECTION_NAME = "pkd_codes"
 MODEL_EMBED = "BAAI/bge-m3"
-MODEL_LLM = "llama-3.1-8b-instant"
+MODEL_LLM = "llama-3.3-70b-versatile"
 
 groq_client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
@@ -40,26 +40,37 @@ def search_pkd(query: str, top_k: int = 20) -> list[dict]:
     ]
 
 
+SYSTEM_PROMPT = """Jesteś ekspertem ds. klasyfikacji PKD (Polska Klasyfikacja Działalności). Pomagasz przedsiębiorcom dobrać właściwe kody PKD do ich działalności.
+
+Zasady uzasadnień:
+- Wyjaśniaj KONKRETNIE, którą część opisanej działalności użytkownika dany kod obejmuje.
+- Nie parafrazuj nazwy kodu ani nie pisz że jest "podobny do głównego kodu".
+- Pisz po polsku, zwięźle (1-2 zdania).
+
+Przykład poprawnego uzasadnienia:
+Działalność: "projektuję strony internetowe i aplikacje mobilne dla firm"
+Kod główny 62.01.Z: "Tworzenie oprogramowania — obejmuje bezpośrednio projektowanie i kodowanie aplikacji mobilnych oraz webowych na zlecenie klientów."
+Kod dodatkowy 62.02.Z (confidence 0.85): "Doradztwo w zakresie informatyki — obejmuje doradztwo technologiczne przy wyborze technologii i architektury rozwiązań dla klientów firmowych."
+
+Odpowiadaj wyłącznie w formacie JSON."""
+
 def ask_llm(answers: dict, candidates: list[dict]) -> dict:
+    filtered = [c for c in candidates if c["score"] >= 0.6]
+
     candidates_text = "\n".join(
         f"- {c['code']}: {c['description']} (score: {c['score']})"
-        for c in candidates
+        for c in filtered
     )
 
-    prompt = f"""Jesteś ekspertem PKD. Na podstawie opisu działalności wybierz najlepsze kody PKD.
-
-Działalność użytkownika:
-- Opis: {answers['main_description']}
+    user_prompt = f"""Działalność użytkownika: {answers['main_description']}
 Uwaga: jeśli działalność to wyłącznie sprzedaż detaliczna przez internet, rozważ kod 47.91.Z.
 
 Kandydaci z bazy PKD:
 {candidates_text}
 
-Wybierz 1 kod główny i tyle kodów dodatkowych ile faktycznie pasuje do działalności. Dla każdego kodu dodatkowego oceń jego trafność (confidence od 0.0 do 1.0).
+Wybierz 1 kod główny i tyle kodów dodatkowych ile faktycznie pasuje do działalności. Dla każdego kodu dodatkowego podaj confidence (0.0–1.0).
 
-Uzasadnienie (justification) musi wyjaśniać konkretnie DLACZEGO ten kod pasuje do opisanej działalności użytkownika — jaką część tej działalności obejmuje. Nie pisz że kod jest "podobny do głównego" ani nie parafrazuj nazwy kodu.
-
-Odpowiedz tylko w formacie JSON:
+Odpowiedz w formacie JSON:
 {{
   "main": {{"code": "XX.XX.X", "description": "...", "justification": "..."}},
   "additional": [
@@ -69,8 +80,12 @@ Odpowiedz tylko w formacie JSON:
 
     response = groq_client.chat.completions.create(
         model=MODEL_LLM,
-        messages=[{"role": "user", "content": prompt}],
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_prompt},
+        ],
         response_format={"type": "json_object"},
+        temperature=0,
     )
 
     result = json.loads(response.choices[0].message.content)
