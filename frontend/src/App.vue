@@ -26,6 +26,9 @@
           <strong>Opis wymaga poprawki</strong><br>
           Spróbuj opisać konkretną działalność gospodarczą, np. <em>„sprzedaż odzieży przez internet"</em> lub <em>„usługi budowlane i wykończeniowe"</em>.
         </template>
+        <template v-else-if="rateLimitError">
+          Zbyt wiele zapytań. Odczekaj chwilę i spróbuj ponownie.
+        </template>
         <template v-else>
           Coś poszło nie tak. Spróbuj ponownie za chwilę.
         </template>
@@ -54,6 +57,7 @@ export default {
       result: null,
       error: null,
       validationError: false,
+      rateLimitError: false,
     }
   },
   methods: {
@@ -61,6 +65,7 @@ export default {
       this.error = null
       this.result = null
       this.loading = true
+      this.rateLimitError = false
       try {
         const res = await fetch(API_URL, {
           method: 'POST',
@@ -71,6 +76,8 @@ export default {
           const data = await res.json()
           if (res.status === 422) {
             this.validationError = true
+          } else if (res.status === 429) {
+            this.rateLimitError = true
           }
           throw new Error(data.detail || `Błąd serwera: ${res.status}`)
         }

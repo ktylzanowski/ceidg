@@ -1,10 +1,17 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.errors import RateLimitExceeded
+from slowapi.util import get_remote_address
 
 from chatbot import ask_llm, build_query, search_pkd
 
+limiter = Limiter(key_func=get_remote_address)
+
 app = FastAPI(title="PKD Recommender")
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 app.add_middleware(
     CORSMiddleware,
@@ -18,9 +25,9 @@ class RecommendRequest(BaseModel):
     main_description: str
 
 
-@app.post("/recommend")
 @app.post("/api/recommend")
-async def recommend(req: RecommendRequest):
+@limiter.limit("10/minute")
+async def recommend(request: Request, req: RecommendRequest):
     if not req.main_description.strip():
         raise HTTPException(status_code=400, detail="main_description nie może być pusty")
 

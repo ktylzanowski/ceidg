@@ -1,9 +1,11 @@
 import asyncio
 import json
 import os
-from groq import AsyncGroq
+from groq import AsyncGroq, APIConnectionError, APIStatusError
 from dotenv import load_dotenv
+from pydantic import BaseModel, Field, ValidationError
 from sentence_transformers import SentenceTransformer
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 from qdrant_client import AsyncQdrantClient
 
 load_dotenv()
@@ -41,6 +43,17 @@ async def search_pkd(query: str, top_k: int = 20) -> list[dict]:
     ]
 
 
+class PkdCode(BaseModel):
+    code: str
+    description: str
+    justification: str
+    confidence: float = Field(default=1.0, ge=0.0, le=1.0)
+
+class LLMResult(BaseModel):
+    main: PkdCode
+    additional: list[PkdCode] = []
+
+
 SYSTEM_PROMPT = """Jesteś ekspertem ds. klasyfikacji PKD (Polska Klasyfikacja Działalności). Pomagasz przedsiębiorcom dobrać właściwe kody PKD do ich działalności.
 
 Walidacja inputu:
@@ -60,6 +73,12 @@ Kod dodatkowy 62.02.Z (confidence 0.85): "Doradztwo w zakresie informatyki — o
 
 Odpowiadaj wyłącznie w formacie JSON."""
 
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=1, max=8),
+    retry=retry_if_exception_type((APIConnectionError, APIStatusError)),
+    reraise=True,
+)
 async def ask_llm(answers: dict, candidates: list[dict]) -> dict:
     filtered = [c for c in candidates if c["score"] >= 0.6]
 
@@ -93,26 +112,27 @@ Odpowiedz w formacie JSON:
         temperature=0,
     )
 
-    result = json.loads(response.choices[0].message.content)
-    if "error" in result:
-        return result
+    raw = json.loads(response.choices[0].message.content)
+    if "error" in raw:
+        return raw
 
-    result["additional"] = [
-        c for c in result.get("additional", [])
-        if c.get("confidence", 0) >= 0.7
-    ]
+    try:
+        validated = LLMResult.model_validate(raw)
+    except ValidationError as e:
+        raise ValueError(f"Niepoprawna struktura odpowiedzi LLM: {e}") from e
 
-    main_confidence = result["main"].get("confidence", 1.0)
-    better = [c for c in result["additional"] if c.get("confidence", 0) > main_confidence]
-    if better:
-        new_main = max(better, key=lambda c: c["confidence"])
-        result["additional"] = [
-            result["main"] if c["code"] == new_main["code"] else c
-            for c in result["additional"]
-        ]
-        result["main"] = new_main
+    validated.additional = [c for c in validated.additional if c.confidence >= 0.7]
 
-    return result
+    if validated.additional:
+        best = max(validated.additional, key=lambda c: c.confidence)
+        if best.confidence > validated.main.confidence:
+            validated.main, best_in_list = best, validated.main
+            validated.additional = [
+                best_in_list if c.code == best.code else c
+                for c in validated.additional
+            ]
+
+    return validated.model_dump()
 
 
 def print_result(result: dict):
