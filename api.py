@@ -26,4 +26,7 @@ def recommend(req: RecommendRequest):
 
     answers = {"main_description": req.main_description}
     candidates = search_pkd(build_query(answers))
-    return ask_llm(answers, candidates)
+    result = ask_llm(answers, candidates)
+    if "error" in result:
+        raise HTTPException(status_code=422, detail=result["error"])
+    return result

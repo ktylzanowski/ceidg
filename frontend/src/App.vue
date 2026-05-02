@@ -10,8 +10,10 @@
           id="desc"
           v-model="description"
           :disabled="loading"
+          :class="{ invalid: validationError }"
           placeholder="np. Prowadzę sklep internetowy z elektroniką, zajmuję się sprzedażą i serwisem laptopów."
           rows="4"
+          @input="validationError = false"
         />
         <button @click="recommend" :disabled="loading || !description.trim()">
           <span v-if="loading" class="spinner" />
@@ -19,7 +21,15 @@
         </button>
       </div>
 
-      <div v-if="error" class="error">{{ error }}</div>
+      <div v-if="error" class="error">
+        <template v-if="validationError">
+          <strong>Opis wymaga poprawki</strong><br>
+          Spróbuj opisać konkretną działalność gospodarczą, np. <em>„sprzedaż odzieży przez internet"</em> lub <em>„usługi budowlane i wykończeniowe"</em>.
+        </template>
+        <template v-else>
+          Coś poszło nie tak. Spróbuj ponownie za chwilę.
+        </template>
+      </div>
 
       <div v-if="result" class="results">
         <PkdCard :pkd="result.main" :main="true" />
@@ -43,6 +53,7 @@ export default {
       loading: false,
       result: null,
       error: null,
+      validationError: false,
     }
   },
   methods: {
@@ -58,6 +69,9 @@ export default {
         })
         if (!res.ok) {
           const data = await res.json()
+          if (res.status === 422) {
+            this.validationError = true
+          }
           throw new Error(data.detail || `Błąd serwera: ${res.status}`)
         }
         this.result = await res.json()
@@ -122,6 +136,16 @@ textarea {
 textarea:focus {
   outline: none;
   border-color: #4f46e5;
+}
+
+textarea.invalid {
+  border-color: #f87171;
+}
+
+.hint {
+  font-size: 0.82rem;
+  color: #9ca3af;
+  margin-top: -4px;
 }
 
 button {
