@@ -55,7 +55,11 @@ Uwaga: jeśli działalność to wyłącznie sprzedaż detaliczna przez internet,
 Kandydaci z bazy PKD:
 {candidates_text}
 
-Wybierz 1 kod główny i tyle kodów dodatkowych ile faktycznie pasuje do działalności. Dla każdego kodu dodatkowego oceń jego trafność (confidence od 0.0 do 1.0). Odpowiedz tylko w formacie JSON:
+Wybierz 1 kod główny i tyle kodów dodatkowych ile faktycznie pasuje do działalności. Dla każdego kodu dodatkowego oceń jego trafność (confidence od 0.0 do 1.0).
+
+Uzasadnienie (justification) musi wyjaśniać konkretnie DLACZEGO ten kod pasuje do opisanej działalności użytkownika — jaką część tej działalności obejmuje. Nie pisz że kod jest "podobny do głównego" ani nie parafrazuj nazwy kodu.
+
+Odpowiedz tylko w formacie JSON:
 {{
   "main": {{"code": "XX.XX.X", "description": "...", "justification": "..."}},
   "additional": [
