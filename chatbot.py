@@ -1,11 +1,17 @@
 import json
-import ollama
+import os
+from groq import Groq
+from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
 
+load_dotenv()
+
 COLLECTION_NAME = "pkd_codes"
 MODEL_EMBED = "BAAI/bge-m3"
-MODEL_LLM = "llama3.1:8b"
+MODEL_LLM = "llama-3.1-8b-instant"
+
+groq_client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
 QUESTIONS = [
     ("main_description", "Opisz w kilku słowach, czym chcesz się zajmować w firmie?"),
@@ -57,13 +63,13 @@ Wybierz 1 kod główny i maksymalnie 5 dodatkowych. Odpowiedz tylko w formacie J
   ]
 }}"""
 
-    response = ollama.chat(
+    response = groq_client.chat.completions.create(
         model=MODEL_LLM,
         messages=[{"role": "user", "content": prompt}],
-        format="json",
+        response_format={"type": "json_object"},
     )
 
-    return json.loads(response["message"]["content"])
+    return json.loads(response.choices[0].message.content)
 
 
 def print_result(result: dict):
