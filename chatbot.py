@@ -45,7 +45,7 @@ async def search_pkd(query: str, top_k: int = 20) -> list[dict]:
 
 class PkdCode(BaseModel):
     code: str
-    description: str = ""
+    description: str
     justification: str
     confidence: float = Field(default=1.0, ge=0.0, le=1.0)
 
@@ -96,9 +96,9 @@ Wybierz 1 kod główny i tyle kodów dodatkowych ile faktycznie pasuje do dział
 
 Odpowiedz w formacie JSON:
 {{
-  "main": {{"code": "XX.XX.X", "justification": "...", "confidence": 0.0}},
+  "main": {{"code": "XX.XX.X", "description": "...", "justification": "...", "confidence": 0.0}},
   "additional": [
-    {{"code": "XX.XX.X", "justification": "...", "confidence": 0.0}}
+    {{"code": "XX.XX.X", "description": "...", "justification": "...", "confidence": 0.0}}
   ]
 }}"""
 
@@ -123,9 +123,7 @@ Odpowiedz w formacie JSON:
 
     descriptions = {c["code"]: c["description"] for c in candidates}
 
-    if validated.main.code not in descriptions:
-        raise ValueError(f"Kod główny {validated.main.code} nie pochodzi z bazy kandydatów")
-    validated.main.description = descriptions[validated.main.code]
+    validated.main.description = descriptions.get(validated.main.code, validated.main.description)
 
     validated.additional = [
         c for c in validated.additional
