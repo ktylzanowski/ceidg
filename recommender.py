@@ -1,12 +1,14 @@
 import asyncio
 import json
+import re
 
 from ollama import AsyncClient, ResponseError
-from pydantic import BaseModel, Field, ValidationError
+from pydantic import BaseModel, Field, ValidationError, field_validator
 from qdrant_client import AsyncQdrantClient
 from sentence_transformers import SentenceTransformer
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception
 
+from errors import INVALID_DESCRIPTION_MESSAGE
 from config import (
     COLLECTION_NAME, MODEL_EMBED, MODEL_LLM,
     OLLAMA_HOST, OLLAMA_TIMEOUT, QDRANT_HOST, QDRANT_PORT,
@@ -26,14 +28,31 @@ def _is_transient(e: BaseException) -> bool:
 
 class PkdCode(BaseModel):
     code: str
-    description: str
+    description: str = ""  # i tak nadpisywany opisem z bazy
     justification: str
     confidence: float = Field(default=1.0, ge=0.0, le=1.0)
+
+    @field_validator("confidence", mode="before")
+    @classmethod
+    def _percent_to_fraction(cls, v):
+        # Małe modele potrafią podać confidence w procentach: 85 albo "85%".
+        if isinstance(v, str):
+            v = v.strip().rstrip("%")
+        try:
+            v = float(v)
+        except (TypeError, ValueError):
+            return v  # niech Pydantic zgłosi błąd walidacji
+        return v / 100 if 1 < v <= 100 else v
 
 
 class LLMResult(BaseModel):
     main: PkdCode
     additional: list[PkdCode] = []
+
+    @field_validator("additional", mode="before")
+    @classmethod
+    def _null_to_empty(cls, v):
+        return [] if v is None else v
 
 
 SYSTEM_PROMPT = """Jesteś ekspertem ds. klasyfikacji PKD (Polska Klasyfikacja Działalności). Pomagasz przedsiębiorcom dobrać właściwe kody PKD do ich działalności.
@@ -62,13 +81,22 @@ def build_query(answers: dict) -> str:
     return f"Działalność: {answers['main_description']}"
 
 
+_TAG_RE = re.compile(r"<\s*/?\s*dzia[lł]alno[sś][cć]\s*>", re.IGNORECASE)
+
+
+def sanitize_description(text: str) -> str:
+    """Usuwa tagi <dzialalnosc>, żeby opis nie mógł zamknąć tagu i wyjść poza niego w prompcie."""
+    return _TAG_RE.sub(" ", text)
+
+
 def build_user_prompt(answers: dict, candidates: list[dict]) -> str:
+    description = sanitize_description(answers["main_description"])
     candidates_text = "\n".join(
         f"- {c['code']}: {c['description']} (score: {c['score']})"
         for c in candidates
     )
     return f"""Działalność użytkownika:
-<dzialalnosc>{answers['main_description']}</dzialalnosc>
+<dzialalnosc>{description}</dzialalnosc>
 Kandydaci z bazy PKD:
 {candidates_text}
 
@@ -85,8 +113,13 @@ Odpowiedz w formacie JSON:
 
 def postprocess(raw: dict, candidates: list[dict]) -> dict:
     """Waliduje odpowiedź LLM i podmienia opisy kodów na te z bazy."""
-    if "error" in raw:
-        return raw
+    if not isinstance(raw, dict):
+        raise ValueError(f"Odpowiedź LLM nie jest obiektem JSON: {type(raw).__name__}")
+
+    # Sprawdzamy wartość, nie sam klucz — małe modele dopisują "error": null do poprawnych odpowiedzi.
+    # Treść błędu napisaną przez model zastępujemy stałym komunikatem — da się nią sterować przez prompt injection.
+    if raw.get("error"):
+        return {"error": INVALID_DESCRIPTION_MESSAGE}
 
     try:
         validated = LLMResult.model_validate(raw)
@@ -99,6 +132,13 @@ def postprocess(raw: dict, candidates: list[dict]) -> dict:
         c for c in validated.additional
         if c.confidence >= 0.7 and c.code in descriptions
     ]
+
+    # Ten sam kod zwrócony kilka razy — zostaje wpis z najwyższym confidence.
+    unique: dict[str, PkdCode] = {}
+    for c in validated.additional:
+        if c.code not in unique or c.confidence > unique[c.code].confidence:
+            unique[c.code] = c
+    validated.additional = list(unique.values())
 
     if validated.main.code not in descriptions:
         # Kod główny spoza listy kandydatów (zmyślony / ze starej klasyfikacji)

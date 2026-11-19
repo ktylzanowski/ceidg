@@ -20,9 +20,18 @@ def load_pkd(path: Path) -> list[dict]:
         return json.load(f)
 
 
+def _as_text_list(value) -> list[str]:
+    # Zabezpieczenie: string zamiast listy rozbiłby się w " ".join() na pojedyncze litery.
+    if isinstance(value, str):
+        return [value]
+    if isinstance(value, list):
+        return [v for v in value if isinstance(v, str)]
+    return []
+
+
 def build_embed_text(pkd: dict) -> str:
-    keywords = " ".join(pkd.get("keywords", []))
-    examples = " ".join(pkd.get("examples", []))
+    keywords = " ".join(_as_text_list(pkd.get("keywords")))
+    examples = " ".join(_as_text_list(pkd.get("examples")))
     return f"{pkd['code']} {pkd['description']} {keywords} {examples}"
 
 

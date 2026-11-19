@@ -1,10 +1,11 @@
-sentence-transformers>=2.7.0
-qdrant-client>=1.9.0
-ollama>=0.4.0
-httpx>=0.27.0
-fastapi>=0.111.0
-uvicorn>=0.30.0
-pydantic>=2.0.0
-python-dotenv>=1.0.0
-tenacity>=8.2.0
-slowapi>=0.1.9
+# Python 3.11+ (fastapi i torch wymagają >=3.11)
+sentence-transformers==6.3.0
+qdrant-client==1.20.0  # trzymać zgodnie z wersją serwera Qdrant w docker-compose.yml (v1.20.x)
+ollama==0.6.3
+httpx==0.28.1
+fastapi==0.165.0
+uvicorn==0.54.0
+pydantic==2.14.4
+python-dotenv==1.2.4
+tenacity==9.2.1
+slowapi==0.1.10

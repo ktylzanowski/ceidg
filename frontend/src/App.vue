@@ -30,6 +30,9 @@
         <template v-else-if="rateLimitError">
           Zbyt wiele zapytań. Odczekaj chwilę i spróbuj ponownie.
         </template>
+        <template v-else-if="serverMessage">
+          {{ serverMessage }} Spróbuj ponownie za chwilę.
+        </template>
         <template v-else>
           Coś poszło nie tak. Spróbuj ponownie za chwilę.
         </template>
@@ -64,6 +67,7 @@ export default {
       error: null,
       validationError: false,
       rateLimitError: false,
+      serverMessage: null,
     }
   },
   methods: {
@@ -72,6 +76,7 @@ export default {
       this.result = null
       this.loading = true
       this.rateLimitError = false
+      this.serverMessage = null
       try {
         const res = await fetch(API_URL, {
           method: 'POST',
@@ -84,6 +89,9 @@ export default {
             this.validationError = true
           } else if (res.status === 429) {
             this.rateLimitError = true
+          } else if (typeof data.detail?.message === 'string') {
+            // Komunikat z backendu, np. timeout albo niedostępny model
+            this.serverMessage = data.detail.message
           }
           throw new Error(data.detail?.message || `Błąd serwera: ${res.status}`)
         }

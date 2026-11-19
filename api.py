@@ -1,15 +1,13 @@
 import logging
 from contextlib import asynccontextmanager
 
-import httpx
 from fastapi import FastAPI, HTTPException, Request
-from ollama import ResponseError
 from pydantic import BaseModel, Field
-from qdrant_client.http.exceptions import ResponseHandlingException, UnexpectedResponse
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
 
+from errors import INVALID_DESCRIPTION_MESSAGE, classify_error
 from recommender import Recommender
 
 logger = logging.getLogger("pkd")
@@ -41,29 +39,18 @@ class RecommendRequest(BaseModel):
 @limiter.limit("10/minute")
 async def recommend(request: Request, req: RecommendRequest):
     if not req.main_description.strip():
-        raise HTTPException(status_code=400, detail="main_description nie może być pusty")
+        raise _error(400, "empty_description", "Opis działalności nie może być pusty.")
 
     recommender: Recommender = request.app.state.recommender
     try:
         result = await recommender.recommend({"main_description": req.main_description})
-    except (ResponseHandlingException, UnexpectedResponse):
-        logger.exception("Qdrant niedostępny")
-        raise _error(503, "search_unavailable", "Baza kodów PKD jest chwilowo niedostępna.")
-    except ConnectionError:
-        logger.exception("Brak połączenia z Ollamą")
-        raise _error(503, "llm_unavailable", "Model językowy jest chwilowo niedostępny.")
-    except httpx.TimeoutException:
-        logger.exception("Timeout Ollamy")
-        raise _error(504, "llm_timeout", "Model językowy nie odpowiedział w wymaganym czasie.")
-    except ResponseError as e:
-        logger.exception("Błąd Ollamy (status %s)", e.status_code)
-        if e.status_code == 404:
-            raise _error(503, "llm_unavailable", "Model językowy nie jest zainstalowany na serwerze.")
-        raise _error(502, "llm_error", "Model językowy zwrócił błąd.")
-    except ValueError:  # również json.JSONDecodeError
-        logger.exception("Niepoprawna odpowiedź LLM")
-        raise _error(502, "llm_bad_response", "Model językowy zwrócił niepoprawną odpowiedź.")
+    except Exception as e:
+        err = classify_error(e)
+        if err is None:
+            raise
+        logger.exception("Błąd przetwarzania zapytania (%s)", err.code)
+        raise _error(*err)
 
     if "error" in result:
-        raise _error(422, "invalid_description", result["error"])
+        raise _error(422, "invalid_description", INVALID_DESCRIPTION_MESSAGE)
     return result

@@ -1,5 +1,6 @@
 import asyncio
 
+from errors import classify_error
 from recommender import Recommender, build_query
 
 QUESTIONS = [
@@ -55,12 +56,13 @@ async def main():
         candidates = await recommender.search_pkd(build_query(answers))
         print(f"Znaleziono {len(candidates)} kandydatów. Analizuję przez LLM...")
 
-        try:
-            result = await recommender.ask_llm(answers, candidates)
-        except ValueError as e:
-            print(f"\nModel zwrócił niepoprawną odpowiedź: {e}")
-            return
+        result = await recommender.ask_llm(answers, candidates)
         print_result(result)
+    except Exception as e:
+        err = classify_error(e)
+        if err is None:
+            raise
+        print(f"\nBŁĄD: {err.message}\n  ({type(e).__name__}: {e})")
     finally:
         await recommender.close()
 

@@ -96,5 +96,6 @@ uvicorn api:app --host 0.0.0.0 --port 8000
 | `OLLAMA_HOST` | Ollama server URL (default: `http://localhost:11434`) |
 | `OLLAMA_TIMEOUT` | LLM request timeout in seconds (default: `300`) |
 | `MODEL_LLM` | Ollama model (default: `llama3.1:8b`) — must be pulled first with `ollama pull` |
+| `MODEL_AUGMENT` | Ollama model used by `scripts/augment_pkd.py` (default: same as `MODEL_LLM`) — a larger model gives better keywords/examples |
 
 All variables are optional. Shared settings live in `config.py`, used by both the API and `scripts/ingest_pkd.py`.
