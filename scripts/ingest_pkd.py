@@ -1,4 +1,5 @@
 import json
+import sys
 import time
 from pathlib import Path
 
@@ -6,11 +7,11 @@ from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
 
-PKD_FILE = Path(__file__).parent.parent / "pkd_augmented.json"
-QDRANT_HOST = "localhost"
-QDRANT_PORT = 6333
-COLLECTION_NAME = "pkd_codes"
-MODEL_NAME = "BAAI/bge-m3"
+ROOT = Path(__file__).parent.parent
+sys.path.insert(0, str(ROOT))
+from config import COLLECTION_NAME, QDRANT_HOST, QDRANT_PORT, MODEL_EMBED as MODEL_NAME  # noqa: E402
+
+PKD_FILE = ROOT / "pkd_augmented.json"
 BATCH_SIZE = 64
 
 

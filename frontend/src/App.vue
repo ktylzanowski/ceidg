@@ -13,6 +13,7 @@
           :class="{ invalid: validationError }"
           placeholder="np. Prowadzę sklep internetowy z elektroniką, zajmuję się sprzedażą i serwisem laptopów."
           rows="4"
+          maxlength="1000"
           @input="validationError = false; error = null"
         />
         <button @click="recommend" :disabled="loading || !description.trim()">
@@ -35,6 +36,11 @@
       </div>
 
       <div v-if="result" class="results">
+        <div v-if="result.low_confidence" class="warning">
+          <strong>Niepewne dopasowanie</strong><br>
+          Nie znaleźliśmy kodów, które wyraźnie pasują do opisu. Poniższe propozycje traktuj ostrożnie —
+          spróbuj opisać działalność bardziej szczegółowo albo zweryfikuj kody w oficjalnej klasyfikacji PKD.
+        </div>
         <PkdCard :pkd="result.main" :main="true" />
         <PkdCard v-for="pkd in result.additional" :key="pkd.code" :pkd="pkd" />
       </div>
@@ -73,13 +79,13 @@ export default {
           body: JSON.stringify({ main_description: this.description }),
         })
         if (!res.ok) {
-          const data = await res.json()
-          if (res.status === 422) {
+          const data = await res.json().catch(() => ({}))
+          if (data.detail?.code === 'invalid_description') {
             this.validationError = true
           } else if (res.status === 429) {
             this.rateLimitError = true
           }
-          throw new Error(data.detail || `Błąd serwera: ${res.status}`)
+          throw new Error(data.detail?.message || `Błąd serwera: ${res.status}`)
         }
         this.result = await res.json()
       } catch (e) {
@@ -149,12 +155,6 @@ textarea.invalid {
   border-color: #f87171;
 }
 
-.hint {
-  font-size: 0.82rem;
-  color: #9ca3af;
-  margin-top: -4px;
-}
-
 button {
   align-self: flex-start;
   display: flex;
@@ -194,6 +194,15 @@ button:disabled { opacity: 0.6; cursor: not-allowed; }
   border: 1px solid #fca5a5;
   border-radius: 8px;
   color: #b91c1c;
+  font-size: 0.9rem;
+}
+
+.warning {
+  padding: 12px 16px;
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  color: #92400e;
   font-size: 0.9rem;
 }
 

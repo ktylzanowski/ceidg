@@ -17,7 +17,7 @@ The user types a description of their business activity and the system:
 - **Backend:** Python, FastAPI
 - **Vector database:** Qdrant (Docker)
 - **Embeddings:** `sentence-transformers` / `BAAI/bge-m3`
-- **LLM:** Groq API (`llama-3.3-70b-versatile`)
+- **LLM:** local [Ollama](https://ollama.com) (`llama3.1:8b` by default)
 - **Frontend:** Vue 3 + Vite
 - **Server:** VPS with Nginx as reverse proxy
 
@@ -27,6 +27,8 @@ The project started locally with **Ollama** running `llama3.1:8b` on my own mach
 
 The solution was to replace the local LLM with the **Groq API** — the free tier provides ~14,400 requests per day and response time dropped to 1–3 seconds. The model was also upgraded to `llama-3.3-70b-versatile`, which at a comparable response time is significantly more accurate than the local `llama3.1:8b`.
 
+The project has since moved back to a local **Ollama** model, so no external API is needed and user descriptions never leave the server. The model is configurable via `MODEL_LLM`; on a CPU-only machine expect responses to take much longer than with a hosted API.
+
 ## Setup
 
 ### Requirements
@@ -34,6 +36,7 @@ The solution was to replace the local LLM with the **Groq API** — the free tie
 - Python 3.11+
 - Node.js 18+
 - Docker
+- [Ollama](https://ollama.com/download)
 
 ### Installation
 
@@ -41,12 +44,14 @@ The solution was to replace the local LLM with the **Groq API** — the free tie
 # Start Qdrant
 docker compose up -d
 
+# Pull the LLM
+ollama pull llama3.1:8b
+
 # Backend
 pip install -r requirements.txt
 
-# Configure API key
+# Optional: override defaults (Qdrant/Ollama host, models)
 cp .env.example .env
-# Fill in your key from console.groq.com
 
 # Frontend
 cd frontend
@@ -78,8 +83,18 @@ python scripts/ingest_pkd.py
 uvicorn api:app --host 0.0.0.0 --port 8000
 ```
 
+> Run a single worker (the default — don't add `--workers`). Each worker loads its own copy of `BAAI/bge-m3` (~2 GB RAM), and the rate limiter keeps its counters in memory, so with multiple workers each one would enforce its own separate limit.
+
 ## Environment variables
 
 | Variable | Description |
 |---|---|
-| `GROQ_API_KEY` | API key from [console.groq.com](https://console.groq.com) |
+| `QDRANT_HOST` | Qdrant host (default: `localhost`) |
+| `QDRANT_PORT` | Qdrant port (default: `6333`) |
+| `QDRANT_COLLECTION` | Collection name (default: `pkd_codes`) |
+| `MODEL_EMBED` | Embedding model (default: `BAAI/bge-m3`) — changing it requires re-running `ingest_pkd.py` |
+| `OLLAMA_HOST` | Ollama server URL (default: `http://localhost:11434`) |
+| `OLLAMA_TIMEOUT` | LLM request timeout in seconds (default: `300`) |
+| `MODEL_LLM` | Ollama model (default: `llama3.1:8b`) — must be pulled first with `ollama pull` |
+
+All variables are optional. Shared settings live in `config.py`, used by both the API and `scripts/ingest_pkd.py`.
